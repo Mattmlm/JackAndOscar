@@ -21,6 +21,9 @@ class NineteenthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("toTwentiethSegue", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

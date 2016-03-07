@@ -22,6 +22,9 @@ class FourteenthPageViewController: UIViewController {
     }
     
 
+    @IBAction func onNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("toFifteenthSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

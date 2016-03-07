@@ -21,6 +21,9 @@ class EighthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("toNinthSegue", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

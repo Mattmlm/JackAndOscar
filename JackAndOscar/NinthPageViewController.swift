@@ -22,6 +22,9 @@ class NinthPageViewController: UIViewController {
     }
     
 
+    @IBAction func onNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("toTenthSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,27 @@
 		5A1314B11C8577CB0033F37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314AF1C8577CB0033F37C /* Main.storyboard */; };
 		5A1314B31C8577CB0033F37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314B21C8577CB0033F37C /* Assets.xcassets */; };
 		5A1314B61C8577CB0033F37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314B41C8577CB0033F37C /* LaunchScreen.storyboard */; };
+		5A76BE1A1C8D33D60034EA1D /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE191C8D33D60034EA1D /* FirstPageViewController.swift */; };
+		5A76BE1C1C8D34560034EA1D /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE1B1C8D34560034EA1D /* SecondPageViewController.swift */; };
+		5A76BE1E1C8D40EC0034EA1D /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE1D1C8D40EC0034EA1D /* ThirdPageViewController.swift */; };
+		5A76BE201C8D40F90034EA1D /* FourthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE1F1C8D40F90034EA1D /* FourthPageViewController.swift */; };
+		5A76BE221C8D41050034EA1D /* FifthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE211C8D41050034EA1D /* FifthPageViewController.swift */; };
+		5A76BE241C8D41110034EA1D /* SixthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE231C8D41110034EA1D /* SixthPageViewController.swift */; };
+		5A76BE261C8D41220034EA1D /* SeventhPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE251C8D41220034EA1D /* SeventhPageViewController.swift */; };
+		5A76BE281C8D413F0034EA1D /* EighthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE271C8D413F0034EA1D /* EighthPageViewController.swift */; };
+		5A76BE2A1C8D414A0034EA1D /* NinthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE291C8D414A0034EA1D /* NinthPageViewController.swift */; };
+		5A76BE2C1C8D41530034EA1D /* TenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE2B1C8D41530034EA1D /* TenthPageViewController.swift */; };
+		5A76BE2E1C8D415C0034EA1D /* EleventhPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE2D1C8D415C0034EA1D /* EleventhPageViewController.swift */; };
+		5A76BE301C8D41800034EA1D /* TwelfthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE2F1C8D41800034EA1D /* TwelfthPageViewController.swift */; };
+		5A76BE321C8D418B0034EA1D /* ThirteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE311C8D418B0034EA1D /* ThirteenthPageViewController.swift */; };
+		5A76BE341C8D41970034EA1D /* FourteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE331C8D41970034EA1D /* FourteenthPageViewController.swift */; };
+		5A76BE361C8D41AF0034EA1D /* FifteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE351C8D41AF0034EA1D /* FifteenthPageViewController.swift */; };
+		5A76BE381C8D41BA0034EA1D /* SixteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE371C8D41BA0034EA1D /* SixteenthPageViewController.swift */; };
+		5A76BE3A1C8D41C30034EA1D /* SeventeenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE391C8D41C30034EA1D /* SeventeenthPageViewController.swift */; };
+		5A76BE3C1C8D41CC0034EA1D /* EighteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE3B1C8D41CC0034EA1D /* EighteenthPageViewController.swift */; };
+		5A76BE3E1C8D41DF0034EA1D /* NineteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE3D1C8D41DF0034EA1D /* NineteenthPageViewController.swift */; };
+		5A76BE401C8D41F50034EA1D /* TwentiethPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE3F1C8D41F50034EA1D /* TwentiethPageViewController.swift */; };
+		5A76BE421C8D43770034EA1D /* TwentyFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE411C8D43770034EA1D /* TwentyFirstPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +43,27 @@
 		5A1314B21C8577CB0033F37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1314B51C8577CB0033F37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1314B71C8577CB0033F37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A76BE191C8D33D60034EA1D /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE1B1C8D34560034EA1D /* SecondPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE1D1C8D40EC0034EA1D /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE1F1C8D40F90034EA1D /* FourthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE211C8D41050034EA1D /* FifthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE231C8D41110034EA1D /* SixthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE251C8D41220034EA1D /* SeventhPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE271C8D413F0034EA1D /* EighthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EighthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE291C8D414A0034EA1D /* NinthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE2B1C8D41530034EA1D /* TenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE2D1C8D415C0034EA1D /* EleventhPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EleventhPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE2F1C8D41800034EA1D /* TwelfthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwelfthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE311C8D418B0034EA1D /* ThirteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE331C8D41970034EA1D /* FourteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE351C8D41AF0034EA1D /* FifteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE371C8D41BA0034EA1D /* SixteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE391C8D41C30034EA1D /* SeventeenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventeenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE3B1C8D41CC0034EA1D /* EighteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EighteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE3D1C8D41DF0034EA1D /* NineteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NineteenthPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE3F1C8D41F50034EA1D /* TwentiethPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentiethPageViewController.swift; sourceTree = "<group>"; };
+		5A76BE411C8D43770034EA1D /* TwentyFirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentyFirstPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +102,27 @@
 				5A1314B21C8577CB0033F37C /* Assets.xcassets */,
 				5A1314B41C8577CB0033F37C /* LaunchScreen.storyboard */,
 				5A1314B71C8577CB0033F37C /* Info.plist */,
+				5A76BE191C8D33D60034EA1D /* FirstPageViewController.swift */,
+				5A76BE1B1C8D34560034EA1D /* SecondPageViewController.swift */,
+				5A76BE1D1C8D40EC0034EA1D /* ThirdPageViewController.swift */,
+				5A76BE1F1C8D40F90034EA1D /* FourthPageViewController.swift */,
+				5A76BE211C8D41050034EA1D /* FifthPageViewController.swift */,
+				5A76BE231C8D41110034EA1D /* SixthPageViewController.swift */,
+				5A76BE251C8D41220034EA1D /* SeventhPageViewController.swift */,
+				5A76BE271C8D413F0034EA1D /* EighthPageViewController.swift */,
+				5A76BE291C8D414A0034EA1D /* NinthPageViewController.swift */,
+				5A76BE2B1C8D41530034EA1D /* TenthPageViewController.swift */,
+				5A76BE2D1C8D415C0034EA1D /* EleventhPageViewController.swift */,
+				5A76BE2F1C8D41800034EA1D /* TwelfthPageViewController.swift */,
+				5A76BE311C8D418B0034EA1D /* ThirteenthPageViewController.swift */,
+				5A76BE331C8D41970034EA1D /* FourteenthPageViewController.swift */,
+				5A76BE351C8D41AF0034EA1D /* FifteenthPageViewController.swift */,
+				5A76BE371C8D41BA0034EA1D /* SixteenthPageViewController.swift */,
+				5A76BE391C8D41C30034EA1D /* SeventeenthPageViewController.swift */,
+				5A76BE3B1C8D41CC0034EA1D /* EighteenthPageViewController.swift */,
+				5A76BE3D1C8D41DF0034EA1D /* NineteenthPageViewController.swift */,
+				5A76BE3F1C8D41F50034EA1D /* TwentiethPageViewController.swift */,
+				5A76BE411C8D43770034EA1D /* TwentyFirstPageViewController.swift */,
 			);
 			path = JackAndOscar;
 			sourceTree = "<group>";
@@ -136,8 +199,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A76BE261C8D41220034EA1D /* SeventhPageViewController.swift in Sources */,
+				5A76BE3A1C8D41C30034EA1D /* SeventeenthPageViewController.swift in Sources */,
+				5A76BE341C8D41970034EA1D /* FourteenthPageViewController.swift in Sources */,
+				5A76BE1A1C8D33D60034EA1D /* FirstPageViewController.swift in Sources */,
+				5A76BE3E1C8D41DF0034EA1D /* NineteenthPageViewController.swift in Sources */,
+				5A76BE281C8D413F0034EA1D /* EighthPageViewController.swift in Sources */,
+				5A76BE2A1C8D414A0034EA1D /* NinthPageViewController.swift in Sources */,
+				5A76BE301C8D41800034EA1D /* TwelfthPageViewController.swift in Sources */,
+				5A76BE201C8D40F90034EA1D /* FourthPageViewController.swift in Sources */,
+				5A76BE1C1C8D34560034EA1D /* SecondPageViewController.swift in Sources */,
+				5A76BE381C8D41BA0034EA1D /* SixteenthPageViewController.swift in Sources */,
 				5A1314AE1C8577CB0033F37C /* ViewController.swift in Sources */,
+				5A76BE361C8D41AF0034EA1D /* FifteenthPageViewController.swift in Sources */,
+				5A76BE2E1C8D415C0034EA1D /* EleventhPageViewController.swift in Sources */,
+				5A76BE2C1C8D41530034EA1D /* TenthPageViewController.swift in Sources */,
+				5A76BE3C1C8D41CC0034EA1D /* EighteenthPageViewController.swift in Sources */,
+				5A76BE401C8D41F50034EA1D /* TwentiethPageViewController.swift in Sources */,
+				5A76BE241C8D41110034EA1D /* SixthPageViewController.swift in Sources */,
 				5A1314AC1C8577CB0033F37C /* AppDelegate.swift in Sources */,
+				5A76BE321C8D418B0034EA1D /* ThirteenthPageViewController.swift in Sources */,
+				5A76BE221C8D41050034EA1D /* FifthPageViewController.swift in Sources */,
+				5A76BE421C8D43770034EA1D /* TwentyFirstPageViewController.swift in Sources */,
+				5A76BE1E1C8D40EC0034EA1D /* ThirdPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +369,7 @@
 				5A1314BC1C8577CB0033F37C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
