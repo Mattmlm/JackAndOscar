@@ -1,14 +1,14 @@
 //
-//  FourthPageViewController.swift
+//  InitialViewController.swift
 //  JackAndOscar
 //
-//  Created by Ashkhen Sargsyan on 3/6/16.
+//  Created by Ashkhen Sargsyan on 3/12/16.
 //  Copyright © 2016 Ashkhen Sargsyan. All rights reserved.
 //
 
 import UIKit
 
-class FourthPageViewController: UIViewController {
+class InitialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,10 @@ class FourthPageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func onReadMyselfButton(sender: AnyObject) {
+        performSegueWithIdentifier("goToStorytimeSegue", sender: nil)
     }
 
     /*

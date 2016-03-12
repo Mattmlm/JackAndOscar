@@ -20,10 +20,6 @@ class ThirdPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toFourthSegue", sender: nil)
-    }
 
     /*
     // MARK: - Navigation

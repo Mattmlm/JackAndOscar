@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZgA-9Z-mvx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CnV-em-wFa">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--First Page View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="FirstPageViewController" id="BYZ-38-t0r" customClass="FirstPageViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0862" id="Wha-F3-1hk">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0md-cp-yEP">
-                                <rect key="frame" x="615" y="161" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6f-oC-hy4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yGS-Ao-6H5"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="u8G-1A-gAf" kind="push" identifier="toSecondSegue" id="tBg-wD-96s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864.5" y="350.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MjE-IS-OUj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZAb-qc-hO1" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Or1-lZ-YYZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FaO-KA-Yqo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Br-7g-2gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="97" y="373"/>
-        </scene>
         <!--Storytime View Controller-->
         <scene sceneID="SeJ-dB-Jv5">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ZgA-9Z-mvx" customClass="StorytimeViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6O-Jp-Vel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="939"/>
+            <point key="canvasLocation" x="844.5" y="350.5"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="i7l-0v-yFx">
+            <objects>
+                <viewController id="CnV-em-wFa" customClass="InitialViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eln-AE-DNY">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0862" id="Z5d-xq-XLQ">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UVs-Ga-1gd">
+                                <rect key="frame" x="446" y="140" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RVf-fV-Cru">
+                                <rect key="frame" x="415" y="245" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onReadMyselfButton:" destination="CnV-em-wFa" eventType="touchUpInside" id="rnC-P3-3PG"/>
+                                    <segue destination="ZgA-9Z-mvx" kind="modal" identifier="goToStorytimeSegue" id="HI4-bO-XuY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KXT-Cv-7HI">
+                                <rect key="frame" x="505" y="201" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXZ-2a-10D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.5" y="-150.5"/>
         </scene>
         <!--Second Page View Controller-->
         <scene sceneID="7dG-IA-K0O">
@@ -81,28 +62,23 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0863" id="UzX-fv-diC">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yRT-y8-XCm">
-                                <rect key="frame" x="598" y="173" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TEC-uj-Mkz">
+                                <rect key="frame" x="573" y="26" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="✕"/>
                                 <connections>
-                                    <action selector="onNextButton:" destination="u8G-1A-gAf" eventType="touchUpInside" id="InL-Bv-vmX"/>
+                                    <action selector="onDismissTap:" destination="u8G-1A-gAf" eventType="touchUpInside" id="Isq-FR-Q0r"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vlw-aR-F34"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="4C1-Ov-XUc" kind="push" identifier="toThirdSegue" id="glJ-zv-awl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRd-d9-YOk" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,28 +95,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0864" id="GrL-2C-eFO">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Q9-UE-ecg">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="4C1-Ov-XUc" eventType="touchUpInside" id="fK8-N0-vuU"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wXA-ja-fRG"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="rpG-ox-gRP" kind="push" identifier="toFourthSegue" id="YKS-MJ-Rl0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8la-VP-eFa" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,28 +119,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0865" id="eac-gA-aMw">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CQf-3e-7Q2">
-                                <rect key="frame" x="615" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="rpG-ox-gRP" eventType="touchUpInside" id="qdd-N3-6Nd"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nmh-ro-GI3"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="FQW-QQ-e85" kind="push" identifier="toFifthSegue" id="M2W-RK-D2u"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqm-z8-fpu" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,28 +143,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0866" id="5zA-0O-aqW">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xum-XX-L3d">
-                                <rect key="frame" x="615" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="FQW-QQ-e85" eventType="touchUpInside" id="5xl-z0-6qM"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kJU-Xm-ayY"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="Yz5-vh-ApC" kind="push" identifier="toSixthSegue" id="iO4-TV-Jov"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnZ-Lw-5LL" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,28 +167,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0867" id="5Vs-LJ-OFl">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gsj-4j-8kX">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="Yz5-vh-ApC" eventType="touchUpInside" id="Zo9-EG-DyM"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XeC-pj-ZqT"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="Fku-0i-k8c" kind="push" identifier="toSeventhSegue" id="aoJ-vm-DMG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0r-uO-38a" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,28 +191,14 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0868" id="MCv-Qg-cOu">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NOD-vl-YGb">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="Fku-0i-k8c" eventType="touchUpInside" id="LSh-SS-eo5"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DbV-tC-Aq1"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="usn-sw-xUQ" kind="push" identifier="toEighthSegue" id="Xy0-Fv-lj5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fu-vx-YNV" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,19 +215,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0869" id="8vw-ak-AC5">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HJx-EX-KUJ">
                                 <rect key="frame" x="614" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="usn-sw-xUQ" eventType="touchUpInside" id="XqB-jD-duC"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uzw-AV-qov"/>
@@ -347,19 +250,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0870" id="uqH-Gc-TA9">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g9o-aD-6nr">
                                 <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="re8-TG-zFI" eventType="touchUpInside" id="u16-7d-mk1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="myz-B4-ePD"/>
@@ -385,19 +285,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0871" id="qfy-qR-1J7">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nuj-3G-O9R">
                                 <rect key="frame" x="614" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="EJF-aH-RaV" eventType="touchUpInside" id="qzo-Dc-Suu"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8gX-2M-OqV"/>
@@ -423,19 +320,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0872" id="z1N-R6-42f">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h5w-zX-cAS">
                                 <rect key="frame" x="619" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="qsH-UJ-q7h" eventType="touchUpInside" id="BIH-qt-Rbd"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="f7p-kr-CVz"/>
@@ -461,19 +355,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0873" id="xEh-ak-h7e">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Y4-Ye-sgE">
                                 <rect key="frame" x="623" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="2Z7-E1-BNj" eventType="touchUpInside" id="21f-NK-gpU"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="RQf-N0-sPI"/>
@@ -499,19 +390,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0874" id="RgJ-Bn-eXr">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ibz-3x-WOx">
                                 <rect key="frame" x="628" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="SxT-aE-dwb" eventType="touchUpInside" id="6IY-cb-AVs"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="X3p-s7-DoH"/>
@@ -537,19 +425,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0875" id="S1U-z6-cnG">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vyj-A0-BcS">
                                 <rect key="frame" x="628" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="NQI-UV-g9A" eventType="touchUpInside" id="Zid-No-hkD"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vxg-wy-3ai"/>
@@ -575,19 +460,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0876" id="E5k-65-yIG">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4AB-zf-Fmz">
                                 <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="t8Y-zY-W77" eventType="touchUpInside" id="sqY-kD-IaG"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MlN-oE-58I"/>
@@ -613,19 +495,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0877" id="DkG-GV-Onf">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vkw-0n-xRQ">
                                 <rect key="frame" x="616" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="pzQ-JW-ViI" eventType="touchUpInside" id="65J-CJ-9qh"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CYb-7m-uFs"/>
@@ -651,19 +530,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0878" id="eb6-Kx-WAl">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9zB-71-NcT">
                                 <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="90i-uM-e7x" eventType="touchUpInside" id="8xv-rP-4dJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="oqy-8G-XcV"/>
@@ -689,19 +565,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0879" id="aUu-G3-Fgc">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wfu-h2-jtb">
                                 <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="jXg-yp-N4r" eventType="touchUpInside" id="OT7-j8-ZZg"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZqQ-Nj-PmC"/>
@@ -727,19 +600,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0880" id="Ej2-k0-gSr">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kvf-AK-wN7">
                                 <rect key="frame" x="613" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="eas-AM-jCa" eventType="touchUpInside" id="Qh1-Fi-43W"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4DE-y8-TFP"/>
@@ -765,19 +635,16 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0881" id="bc0-SF-qtz">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UId-qU-ipq">
                                 <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="pis-0v-ffJ" eventType="touchUpInside" id="8VC-gu-KNG"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rBe-Ww-O9u"/>
@@ -803,10 +670,8 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0882" id="aya-GA-a7B">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="12d-ZR-6X3"/>
