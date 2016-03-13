@@ -10,15 +10,31 @@ import UIKit
 
 class NineteenthPageViewController: UIViewController {
 
+    @IBOutlet weak var textView: UIView!
+    @IBOutlet weak var jackBellyView: UIImageView!
+    @IBOutlet weak var speechView: UIImageView!
+    @IBOutlet weak var ruffTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        UIView.animateWithDuration(1.0, delay: 0, options: [.Repeat], animations: {
+            self.jackBellyView.transform = CGAffineTransformMakeScale(1.1, 1.1)
+            }, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func didPressJackBelly(sender: UIButton) {
+        UIView.animateWithDuration(0.2, animations: {
+            self.speechView.alpha = 1
+            self.ruffTextView.alpha = 1
+            }, completion: { (finished: Bool) -> Void in
+                self.jackBellyView.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        })
     }
     
     @IBAction func onNextButton(sender: AnyObject) {
