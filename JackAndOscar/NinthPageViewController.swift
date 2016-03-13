@@ -11,10 +11,12 @@ import UIKit
 class NinthPageViewController: UIViewController {
     @IBOutlet weak var jackArm: UIImageView!
     @IBOutlet weak var jackEyelids: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textLabel.hidden = true
+        textLabel.alpha = 0
         // Do any additional setup after loading the view.
     }
     
@@ -39,7 +41,7 @@ class NinthPageViewController: UIViewController {
     
         //blinking
         
-        UIView.animateKeyframesWithDuration(3, delay: 0.5, options: .Repeat, animations: { () -> Void in
+        UIView.animateKeyframesWithDuration(5, delay: 0.5, options: .Repeat, animations: { () -> Void in
             UIView.addKeyframeWithRelativeStartTime(0.1, relativeDuration: 0.001, animations: { () -> Void in
                 self.jackEyelids.alpha = 1
             })
@@ -50,7 +52,12 @@ class NinthPageViewController: UIViewController {
             
             }, completion: nil)
     
-    
+        //text
+        
+        UIView.animateWithDuration(2.5, animations: { () -> Void in
+            self.textLabel.hidden = false
+            self.textLabel.alpha = 1
+            }, completion: nil)
     
     }
 

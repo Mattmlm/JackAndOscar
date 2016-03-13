@@ -9,6 +9,7 @@
 import UIKit
 
 class TwelfthPageViewController: UIViewController {
+    @IBOutlet weak var flashlight: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

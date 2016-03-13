@@ -9,13 +9,48 @@
 import UIKit
 
 class EleventhPageViewController: UIViewController {
+    @IBOutlet weak var dogPath: UIImageView!
+    @IBOutlet weak var duckPath: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.dogPath.hidden = true
+        self.dogPath.alpha = 0
+        self.duckPath.hidden = true
+        self.duckPath.alpha = 0
+        
         // Do any additional setup after loading the view.
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //path
+        
+        UIView.animateWithDuration(5.0, animations: { () -> Void in
+            self.dogPath.hidden = false
+            self.dogPath.alpha = 0.8
+            }, completion: nil)
+        
+        UIView.animateWithDuration(5.0, animations: { () -> Void in
+            self.duckPath.hidden = false
+            self.duckPath.alpha = 0.8
+            }, completion: nil)
+        
+        UIView.animateWithDuration(11.0, animations: { () -> Void in
+            self.dogPath.hidden = false
+            self.dogPath.alpha = 0.05
+            }, completion: nil)
+        
+        UIView.animateWithDuration(12.0, animations: { () -> Void in
+            self.duckPath.hidden = false
+            self.duckPath.alpha = 0.05
+            }, completion: nil)
+
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
