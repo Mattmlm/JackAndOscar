@@ -10,10 +10,27 @@ import UIKit
 
 class FifthPageViewController: UIViewController {
 
+    @IBOutlet weak var oscarImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        oscarImageView.layer.position.x = 700
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let animate = CABasicAnimation()
+        animate.keyPath = "position.x"
+        animate.fromValue = 700
+        animate.toValue = 442
+        animate.duration = 1
+        
+        animate.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        
+        oscarImageView.layer.addAnimation(animate, forKey: "basic")
+        
+        oscarImageView.layer.position.x = 442
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,14 +38,4 @@ class FifthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

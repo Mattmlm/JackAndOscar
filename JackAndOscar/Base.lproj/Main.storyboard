@@ -251,10 +251,41 @@ There was lightning and loud thunder. Jack was afraid.</string>
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0866" id="5zA-0O-aqW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="Y84-g3-nK1">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree5-1" id="xLM-XX-CjF">
+                                <rect key="frame" x="66" y="107" width="44" height="248"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="oscar5" id="QeY-vd-GKn">
+                                <rect key="frame" x="442" y="268" width="78" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree5-2" id="sx0-IC-Mie">
+                                <rect key="frame" x="478" y="68" width="85" height="304"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="houses5" id="7Ge-sN-tyY">
+                                <rect key="frame" x="83" y="255" width="159" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nmB-6Q-tMT">
+                                <rect key="frame" x="132" y="73" width="320" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The next day Jack looked outside and saw something 
+moving. It was all white. “What could it be?,” he 
+thought. He went to get a closer look. As he got 
+near, he saw that it had big orange feet, skinny orange 
+legs, a white body, and a long neck with a small head on 
+top. Its mouth was big and orange and it had tiny black 
+eyes. “What a funny looking animal,” he thought.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -262,6 +293,9 @@ There was lightning and loud thunder. Jack was afraid.</string>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="oscarImageView" destination="QeY-vd-GKn" id="2uf-zo-TpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnZ-Lw-5LL" sceneMemberID="firstResponder"/>
             </objects>
@@ -797,7 +831,6 @@ There was lightning and loud thunder. Jack was afraid.</string>
     </scenes>
     <resources>
         <image name="IMG_0862" width="667" height="375"/>
-        <image name="IMG_0866" width="667" height="375"/>
         <image name="IMG_0867" width="667" height="375"/>
         <image name="IMG_0868" width="667" height="375"/>
         <image name="IMG_0869" width="667" height="375"/>
@@ -817,13 +850,18 @@ There was lightning and loud thunder. Jack was afraid.</string>
         <image name="bg2" width="567" height="375"/>
         <image name="bg3" width="567" height="375"/>
         <image name="bg4" width="567" height="375"/>
+        <image name="bg5" width="567" height="375"/>
         <image name="houses3" width="148" height="82"/>
+        <image name="houses5" width="134" height="74"/>
         <image name="jack2" width="125" height="257"/>
+        <image name="oscar5" width="52" height="70"/>
         <image name="tree2-1" width="28" height="193"/>
         <image name="tree2-2" width="27" height="195"/>
         <image name="tree2-3" width="29" height="209"/>
         <image name="tree2-4" width="31" height="206"/>
         <image name="tree3-1" width="28" height="200"/>
         <image name="tree3-3" width="29" height="198"/>
+        <image name="tree5-1" width="31" height="219"/>
+        <image name="tree5-2" width="72" height="230"/>
     </resources>
 </document>
