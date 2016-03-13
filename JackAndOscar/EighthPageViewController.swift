@@ -9,6 +9,8 @@
 import UIKit
 
 class EighthPageViewController: UIViewController {
+    @IBOutlet weak var oscarEyelids: UIImageView!
+    @IBOutlet weak var oscarArm: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,39 @@ class EighthPageViewController: UIViewController {
     @IBAction func onNextButton(sender: AnyObject) {
         performSegueWithIdentifier("toNinthSegue", sender: nil)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    
+        UIView.animateKeyframesWithDuration(2.2, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            let originalOscarArmFrame = self.oscarArm.frame
+            var raisedOscarArmFrame = originalOscarArmFrame
+            raisedOscarArmFrame.origin.y = raisedOscarArmFrame.origin.y + 4
+            
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
+                self.oscarArm.frame = raisedOscarArmFrame
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
+                self.oscarArm.frame = originalOscarArmFrame
+            })
+            }, completion: nil)
+        
+        
+        UIView.animateKeyframesWithDuration(1.0, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
+                self.oscarEyelids.hidden = true
+            })
+        
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
+            self.oscarEyelids.hidden = false
+            })
+            
+            }, completion: nil)
+    }
+
+
 
     /*
     // MARK: - Navigation
