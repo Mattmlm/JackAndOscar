@@ -59,8 +59,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0863" id="UzX-fv-diC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" id="rfO-X5-Q4p">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="jack2" id="Jhx-LW-Hiw">
+                                <rect key="frame" x="313" y="53" width="159" height="308"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xzS-WV-ZHA" appends="YES" id="Ccj-DI-lcN"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-1" id="NE7-ee-xhs">
+                                <rect key="frame" x="98" y="131" width="35" height="230"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-2" id="mKf-jO-cY8">
+                                <rect key="frame" x="140" y="125" width="37" height="236"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-3" id="Vow-Zn-lP0">
+                                <rect key="frame" x="460" y="108" width="39" height="253"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-4" id="MKO-GM-LSd">
+                                <rect key="frame" x="501" y="111" width="48" height="247"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TEC-uj-Mkz">
@@ -72,6 +96,10 @@
                                     <action selector="onDismissTap:" destination="u8G-1A-gAf" eventType="touchUpInside" id="Isq-FR-Q0r"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PnZ-th-8ia">
+                                <rect key="frame" x="343" y="89" width="89" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -79,8 +107,16 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="eyesImageView" destination="PnZ-th-8ia" id="AdV-pA-N9C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRd-d9-YOk" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xzS-WV-ZHA">
+                    <connections>
+                        <action selector="onDogTap:" destination="u8G-1A-gAf" id="lup-OY-ri9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1559.5" y="350.5"/>
         </scene>
@@ -686,7 +722,6 @@
     </scenes>
     <resources>
         <image name="IMG_0862" width="667" height="375"/>
-        <image name="IMG_0863" width="667" height="375"/>
         <image name="IMG_0864" width="667" height="375"/>
         <image name="IMG_0865" width="667" height="375"/>
         <image name="IMG_0866" width="667" height="375"/>
@@ -706,5 +741,11 @@
         <image name="IMG_0880" width="667" height="375"/>
         <image name="IMG_0881" width="667" height="375"/>
         <image name="IMG_0882" width="667" height="375"/>
+        <image name="bg2" width="567" height="375"/>
+        <image name="jack2" width="125" height="257"/>
+        <image name="tree2-1" width="28" height="193"/>
+        <image name="tree2-2" width="27" height="195"/>
+        <image name="tree2-3" width="29" height="209"/>
+        <image name="tree2-4" width="31" height="206"/>
     </resources>
 </document>
