@@ -11,11 +11,14 @@ import UIKit
 class EighthPageViewController: UIViewController {
     @IBOutlet weak var oscarEyelids: UIImageView!
     @IBOutlet weak var oscarArm: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.oscarEyelids.hidden = false
+        self.oscarEyelids.alpha = 0
+        textLabel.hidden = true
+        textLabel.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,10 +33,12 @@ class EighthPageViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     
+        //arm
+        
         UIView.animateKeyframesWithDuration(2.2, delay: 0.5, options: .Repeat, animations: { () -> Void in
             let originalOscarArmFrame = self.oscarArm.frame
             var raisedOscarArmFrame = originalOscarArmFrame
-            raisedOscarArmFrame.origin.y = raisedOscarArmFrame.origin.y + 4
+            raisedOscarArmFrame.origin.y = raisedOscarArmFrame.origin.y + 6
             
             UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
                 self.oscarArm.frame = raisedOscarArmFrame
@@ -44,15 +49,31 @@ class EighthPageViewController: UIViewController {
             })
             }, completion: nil)
         
+        //text
         
-        UIView.animateKeyframesWithDuration(1.0, delay: 0.5, options: .Repeat, animations: { () -> Void in
-            
-            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
-                self.oscarEyelids.hidden = true
+            UIView.animateWithDuration(2.5, animations: { () -> Void in
+                self.textLabel.hidden = false
+                self.textLabel.alpha = 1
+            }, completion: nil)
+        
+        
+        //blinking
+        
+        UIView.animateKeyframesWithDuration(4, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.001, animations: { () -> Void in
+                self.oscarEyelids.alpha = 1
             })
-        
-            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
-            self.oscarEyelids.hidden = false
+            
+            UIView.addKeyframeWithRelativeStartTime(0.001, relativeDuration: 0.001, animations: { () -> Void in
+                self.oscarEyelids.alpha = 0
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.002, relativeDuration: 0.001, animations: { () -> Void in
+                self.oscarEyelids.alpha = 1
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.003, relativeDuration: 0.001, animations: { () -> Void in
+                self.oscarEyelids.alpha = 0
             })
             
             }, completion: nil)
