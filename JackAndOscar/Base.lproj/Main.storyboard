@@ -64,7 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="jack2" id="Jhx-LW-Hiw">
-                                <rect key="frame" x="313" y="53" width="159" height="308"/>
+                                <rect key="frame" x="351" y="53" width="159" height="308"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -72,19 +72,19 @@
                                 </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-1" id="NE7-ee-xhs">
-                                <rect key="frame" x="98" y="131" width="35" height="230"/>
+                                <rect key="frame" x="68" y="131" width="35" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-2" id="mKf-jO-cY8">
-                                <rect key="frame" x="140" y="125" width="37" height="236"/>
+                                <rect key="frame" x="123" y="119" width="37" height="236"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-3" id="Vow-Zn-lP0">
-                                <rect key="frame" x="460" y="108" width="39" height="253"/>
+                                <rect key="frame" x="523" y="108" width="39" height="253"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-4" id="MKO-GM-LSd">
-                                <rect key="frame" x="501" y="111" width="48" height="247"/>
+                                <rect key="frame" x="564" y="111" width="48" height="247"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TEC-uj-Mkz">
@@ -97,9 +97,24 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PnZ-th-8ia">
-                                <rect key="frame" x="343" y="89" width="89" height="44"/>
+                                <rect key="frame" x="381" y="89" width="89" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ckb-vd-xp0">
+                                <rect key="frame" x="168" y="20" width="263" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Jack was a good dog.
+He was brown with short legs, a round belly,
+and floppy ears.
+
+He lived in a nice house
+on a quiet street with 
+other nice houses.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -128,10 +143,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0864" id="GrL-2C-eFO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" id="GUL-ec-NQu">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vIW-D4-kcW">
+                                <rect key="frame" x="174" y="43" width="233" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There were many trees along the street 
+close to his house. He liked to lookout 
+the window and watch the children
+play on the trees in the afternoon. He
+ate the same thing everyday and he
+always took a walk on the street after
+lunch. Jack liked his street, but he was 
+lonely. He didn’t have any friends.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="vC4-Zv-9Z0">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-3" id="Tjo-ke-a01">
+                                        <rect key="frame" x="110" y="94" width="41" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-3" id="M2I-5f-hDK">
+                                        <rect key="frame" x="474" y="76" width="41" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="houses3" id="ASn-hz-nbC">
+                                        <rect key="frame" x="247" y="212" width="219" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-1" id="5Ph-Ng-EJ0">
+                                        <rect key="frame" x="419" y="89" width="47" height="234"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -139,6 +192,11 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="foregroundView" destination="vC4-Zv-9Z0" id="DTa-eq-Rwy"/>
+                        <outlet property="houseImageView" destination="ASn-hz-nbC" id="Olg-ma-MoN"/>
+                        <outlet property="textLabel" destination="vIW-D4-kcW" id="UQ7-Qw-KzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8la-VP-eFa" sceneMemberID="firstResponder"/>
             </objects>
@@ -722,7 +780,6 @@
     </scenes>
     <resources>
         <image name="IMG_0862" width="667" height="375"/>
-        <image name="IMG_0864" width="667" height="375"/>
         <image name="IMG_0865" width="667" height="375"/>
         <image name="IMG_0866" width="667" height="375"/>
         <image name="IMG_0867" width="667" height="375"/>
@@ -742,10 +799,14 @@
         <image name="IMG_0881" width="667" height="375"/>
         <image name="IMG_0882" width="667" height="375"/>
         <image name="bg2" width="567" height="375"/>
+        <image name="bg3" width="567" height="375"/>
+        <image name="houses3" width="148" height="82"/>
         <image name="jack2" width="125" height="257"/>
         <image name="tree2-1" width="28" height="193"/>
         <image name="tree2-2" width="27" height="195"/>
         <image name="tree2-3" width="29" height="209"/>
         <image name="tree2-4" width="31" height="206"/>
+        <image name="tree3-1" width="28" height="200"/>
+        <image name="tree3-3" width="29" height="198"/>
     </resources>
 </document>
