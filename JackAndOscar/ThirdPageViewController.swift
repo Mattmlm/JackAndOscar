@@ -8,31 +8,32 @@
 
 import UIKit
 
-class ThirdPageViewController: UIViewController {
-
+class ThirdPageViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var houseImageView: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var foregroundView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textLabel.hidden = true
+        foregroundView.transform = CGAffineTransformMakeScale(2, 2)
+        
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.foregroundView.transform = CGAffineTransformMakeScale(1, 1)
+            }) { (Bool) -> Void in
+                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                    self.textLabel.hidden = false
+                    }, completion: nil)
+            }
 
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toFourthSegue", sender: nil)
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

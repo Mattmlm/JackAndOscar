@@ -10,9 +10,28 @@ import UIKit
 
 class SecondPageViewController: UIViewController {
 
+    @IBOutlet weak var eyesImageView: UIImageView!
+    
+    var image_1: UIImage!
+    var image_2: UIImage!
+    var image_3: UIImage!
+    var image_4: UIImage!
+    
+    var images: [UIImage]!
+   
+    var animatedImage: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        image_1 = UIImage(named: "transparent")
+        image_2 = UIImage(named: "jack2Eyelids_halfopen")
+        image_3 = UIImage(named: "jack2Eyelids_halfopen_2")
+        image_4 = UIImage(named: "jack2Eyelids")
+        
+        images = [image_1, image_2, image_3, image_4]
+        animatedImage = UIImage.animatedImageWithImages(images, duration:0.6)
+    
         // Do any additional setup after loading the view.
     }
 
@@ -21,11 +40,27 @@ class SecondPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  
-
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toThirdSegue", sender: nil)
+    @IBAction func onDismissTap(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func onDogTap(sender: AnyObject) {
+        
+        eyesImageView.image = animatedImage
+        delay(1.0) {
+            self.eyesImageView.image = nil
+        }
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+
     /*
     // MARK: - Navigation
 

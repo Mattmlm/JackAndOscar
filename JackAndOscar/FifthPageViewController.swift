@@ -21,10 +21,6 @@ class FifthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toSixthSegue", sender: nil)
-    }
-
     /*
     // MARK: - Navigation
 

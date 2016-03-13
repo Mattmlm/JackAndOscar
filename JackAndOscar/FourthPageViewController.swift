@@ -20,11 +20,6 @@ class FourthPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toFifthSegue", sender: nil
-        )
-    }
 
     /*
     // MARK: - Navigation

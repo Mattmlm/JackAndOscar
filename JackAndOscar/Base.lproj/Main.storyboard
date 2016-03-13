@@ -1,70 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZAb-qc-hO1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CnV-em-wFa">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--First Page View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="FirstPageViewController" id="BYZ-38-t0r" customClass="FirstPageViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0862" id="Wha-F3-1hk">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0md-cp-yEP">
-                                <rect key="frame" x="615" y="161" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6f-oC-hy4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yGS-Ao-6H5"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="u8G-1A-gAf" kind="push" identifier="toSecondSegue" id="tBg-wD-96s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864.5" y="350.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MjE-IS-OUj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZAb-qc-hO1" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Or1-lZ-YYZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FaO-KA-Yqo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Br-7g-2gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="97" y="373"/>
-        </scene>
         <!--Storytime View Controller-->
         <scene sceneID="SeJ-dB-Jv5">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ZgA-9Z-mvx" customClass="StorytimeViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6O-Jp-Vel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="939"/>
+            <point key="canvasLocation" x="844.5" y="350.5"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="i7l-0v-yFx">
+            <objects>
+                <viewController id="CnV-em-wFa" customClass="InitialViewController" customModule="JackAndOscar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eln-AE-DNY">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0862" id="Z5d-xq-XLQ">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UVs-Ga-1gd">
+                                <rect key="frame" x="446" y="140" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RVf-fV-Cru">
+                                <rect key="frame" x="415" y="245" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onReadMyselfButton:" destination="CnV-em-wFa" eventType="touchUpInside" id="rnC-P3-3PG"/>
+                                    <segue destination="ZgA-9Z-mvx" kind="modal" identifier="goToStorytimeSegue" id="HI4-bO-XuY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KXT-Cv-7HI">
+                                <rect key="frame" x="505" y="201" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXZ-2a-10D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.5" y="-150.5"/>
         </scene>
         <!--Second Page View Controller-->
         <scene sceneID="7dG-IA-K0O">
@@ -74,18 +59,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0863" id="UzX-fv-diC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" id="rfO-X5-Q4p">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="jack2" id="Jhx-LW-Hiw">
+                                <rect key="frame" x="351" y="53" width="159" height="308"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xzS-WV-ZHA" appends="YES" id="Ccj-DI-lcN"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-1" id="NE7-ee-xhs">
+                                <rect key="frame" x="68" y="131" width="35" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yRT-y8-XCm">
-                                <rect key="frame" x="598" y="173" width="32" height="30"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-2" id="mKf-jO-cY8">
+                                <rect key="frame" x="123" y="119" width="37" height="236"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-3" id="Vow-Zn-lP0">
+                                <rect key="frame" x="523" y="108" width="39" height="253"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree2-4" id="MKO-GM-LSd">
+                                <rect key="frame" x="564" y="111" width="48" height="247"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TEC-uj-Mkz">
+                                <rect key="frame" x="573" y="26" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="✕"/>
                                 <connections>
-                                    <action selector="onNextButton:" destination="u8G-1A-gAf" eventType="touchUpInside" id="InL-Bv-vmX"/>
+                                    <action selector="onDismissTap:" destination="u8G-1A-gAf" eventType="touchUpInside" id="Isq-FR-Q0r"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PnZ-th-8ia">
+                                <rect key="frame" x="381" y="89" width="89" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ckb-vd-xp0">
+                                <rect key="frame" x="168" y="20" width="263" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Jack was a good dog.
+He was brown with short legs, a round belly,
+and floppy ears.
+
+He lived in a nice house
+on a quiet street with 
+other nice houses.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -94,10 +123,15 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="4C1-Ov-XUc" kind="push" identifier="toThirdSegue" id="glJ-zv-awl"/>
+                        <outlet property="eyesImageView" destination="PnZ-th-8ia" id="AdV-pA-N9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRd-d9-YOk" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xzS-WV-ZHA">
+                    <connections>
+                        <action selector="onDogTap:" destination="u8G-1A-gAf" id="lup-OY-ri9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1559.5" y="350.5"/>
         </scene>
@@ -109,18 +143,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0864" id="GrL-2C-eFO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" id="GUL-ec-NQu">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Q9-UE-ecg">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="4C1-Ov-XUc" eventType="touchUpInside" id="fK8-N0-vuU"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vIW-D4-kcW">
+                                <rect key="frame" x="174" y="43" width="233" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There were many trees along the street 
+close to his house. He liked to lookout 
+the window and watch the children
+play on the trees in the afternoon. He
+ate the same thing everyday and he
+always took a walk on the street after
+lunch. Jack liked his street, but he was 
+lonely. He didn’t have any friends.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="vC4-Zv-9Z0">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-3" id="Tjo-ke-a01">
+                                        <rect key="frame" x="110" y="94" width="41" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-3" id="M2I-5f-hDK">
+                                        <rect key="frame" x="474" y="76" width="41" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="houses3" id="ASn-hz-nbC">
+                                        <rect key="frame" x="247" y="212" width="219" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree3-1" id="5Ph-Ng-EJ0">
+                                        <rect key="frame" x="419" y="89" width="47" height="234"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -129,7 +193,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="rpG-ox-gRP" kind="push" identifier="toFourthSegue" id="YKS-MJ-Rl0"/>
+                        <outlet property="foregroundView" destination="vC4-Zv-9Z0" id="DTa-eq-Rwy"/>
+                        <outlet property="houseImageView" destination="ASn-hz-nbC" id="Olg-ma-MoN"/>
+                        <outlet property="textLabel" destination="vIW-D4-kcW" id="UQ7-Qw-KzO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8la-VP-eFa" sceneMemberID="firstResponder"/>
@@ -148,14 +214,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CQf-3e-7Q2">
-                                <rect key="frame" x="615" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="rpG-ox-gRP" eventType="touchUpInside" id="qdd-N3-6Nd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -163,9 +221,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="FQW-QQ-e85" kind="push" identifier="toFifthSegue" id="M2W-RK-D2u"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqm-z8-fpu" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,14 +238,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xum-XX-L3d">
-                                <rect key="frame" x="615" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="FQW-QQ-e85" eventType="touchUpInside" id="5xl-z0-6qM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -198,9 +245,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="Yz5-vh-ApC" kind="push" identifier="toSixthSegue" id="iO4-TV-Jov"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnZ-Lw-5LL" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,14 +262,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gsj-4j-8kX">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="Yz5-vh-ApC" eventType="touchUpInside" id="Zo9-EG-DyM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -233,9 +269,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="Fku-0i-k8c" kind="push" identifier="toSeventhSegue" id="aoJ-vm-DMG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0r-uO-38a" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,14 +286,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NOD-vl-YGb">
-                                <rect key="frame" x="608" y="173" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="onNextButton:" destination="Fku-0i-k8c" eventType="touchUpInside" id="LSh-SS-eo5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -268,9 +293,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="usn-sw-xUQ" kind="push" identifier="toEighthSegue" id="Xy0-Fv-lj5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fu-vx-YNV" sceneMemberID="firstResponder"/>
             </objects>
@@ -932,8 +954,6 @@ a loud, “Quack.”</string>
     </scenes>
     <resources>
         <image name="IMG_0862" width="667" height="375"/>
-        <image name="IMG_0863" width="667" height="375"/>
-        <image name="IMG_0864" width="667" height="375"/>
         <image name="IMG_0865" width="667" height="375"/>
         <image name="IMG_0866" width="667" height="375"/>
         <image name="IMG_0867" width="667" height="375"/>
@@ -973,5 +993,15 @@ a loud, “Quack.”</string>
         <image name="tree10-6" width="39" height="271"/>
         <image name="trees14-1" width="100" height="130"/>
         <image name="trees14-2" width="162" height="120"/>
+        <image name="bg2" width="567" height="375"/>
+        <image name="bg3" width="567" height="375"/>
+        <image name="houses3" width="148" height="82"/>
+        <image name="jack2" width="125" height="257"/>
+        <image name="tree2-1" width="28" height="193"/>
+        <image name="tree2-2" width="27" height="195"/>
+        <image name="tree2-3" width="29" height="209"/>
+        <image name="tree2-4" width="31" height="206"/>
+        <image name="tree3-1" width="28" height="200"/>
+        <image name="tree3-3" width="29" height="198"/>
     </resources>
 </document>
