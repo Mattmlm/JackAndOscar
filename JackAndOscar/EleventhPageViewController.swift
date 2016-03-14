@@ -38,14 +38,14 @@ class EleventhPageViewController: UIViewController {
             self.duckPath.alpha = 0.8
             }, completion: nil)
         
-        UIView.animateWithDuration(11.0, animations: { () -> Void in
+        UIView.animateWithDuration(5.0, animations: { () -> Void in
             self.dogPath.hidden = false
-            self.dogPath.alpha = 0.05
+            self.dogPath.alpha = 0
             }, completion: nil)
         
-        UIView.animateWithDuration(12.0, animations: { () -> Void in
+        UIView.animateWithDuration(6.0, animations: { () -> Void in
             self.duckPath.hidden = false
-            self.duckPath.alpha = 0.05
+            self.duckPath.alpha = 0
             }, completion: nil)
 
         

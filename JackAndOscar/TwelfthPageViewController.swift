@@ -17,6 +17,35 @@ class TwelfthPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //flashlight
+        
+        UIView.animateKeyframesWithDuration(2.0, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            let originalFlashlightFrame = self.flashlight.frame
+            var movedFlashlightFrame = originalFlashlightFrame
+            movedFlashlightFrame.origin.x = movedFlashlightFrame.origin.x + 15
+            
+            
+            UIView.addKeyframeWithRelativeStartTime(1.0, relativeDuration: 0.2, animations: { () -> Void in
+                self.flashlight.frame = movedFlashlightFrame
+            })
+            UIView.addKeyframeWithRelativeStartTime(2.0, relativeDuration: 2.0, animations: { () -> Void in
+                self.flashlight.alpha = 1
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(5.0, relativeDuration: 0.2, animations: { () -> Void in
+                self.flashlight.frame = originalFlashlightFrame
+            })
+            UIView.addKeyframeWithRelativeStartTime(6.0, relativeDuration: 2.0, animations: { () -> Void in
+                self.flashlight.alpha = 0
+            })
+            
+            }, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
