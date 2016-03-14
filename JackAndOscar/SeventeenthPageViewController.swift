@@ -10,10 +10,12 @@ import UIKit
 
 class SeventeenthPageViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scrollView.contentSize = CGSize(width: 1334, height: 375)
     }
 
     override func didReceiveMemoryWarning() {
