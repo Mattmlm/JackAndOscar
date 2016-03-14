@@ -45,7 +45,6 @@ class StorytimeViewController: UIPageViewController {
             self.newPageViewController("Fifteenth"),
             self.newPageViewController("Sixteenth"),
             self.newPageViewController("Seventeenth"),
-            self.newPageViewController("Eighteenth"),
             self.newPageViewController("Nineteenth"),
             self.newPageViewController("Twentieth"),
             self.newPageViewController("TwentyFirst")]
