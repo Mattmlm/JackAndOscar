@@ -1297,12 +1297,10 @@ Design Mario Olmos</string>
         <image name="bg7" width="567" height="375"/>
         <image name="houses3" width="148" height="82"/>
         <image name="houses5" width="134" height="74"/>
-        <image name="jack2" width="125" height="257"/>
         <image name="jack6" width="87" height="179"/>
         <image name="oscar5" width="52" height="70"/>
         <image name="bg20" width="667" height="375"/>
         <image name="bg21" width="667" height="375"/>
-        <image name="houses5" width="134" height="74"/>
         <image name="jack16" width="78" height="159"/>
         <image name="jack17" width="115" height="213"/>
         <image name="jack19-button" width="43" height="58"/>
