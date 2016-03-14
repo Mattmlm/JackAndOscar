@@ -327,8 +327,39 @@ eyes. “What a funny looking animal,” he thought.
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0867" id="5Vs-LJ-OFl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg6" id="DF8-58-WJ2">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="oscar6" id="HSc-eW-7Gv">
+                                <rect key="frame" x="317" y="168" width="97" height="183"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DnQ-AR-m8t" appends="YES" id="cNF-AV-qwC"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="jack6" id="aZr-yg-GYf">
+                                <rect key="frame" x="72" y="119" width="106" height="232"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sgw-i0-vqT">
+                                <rect key="frame" x="186" y="30" width="392" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">“Hello, where is the farm?,” it asked. 
+Jack had never heard of the farm. “What is the farm,” he asked. 
+“Why, the farm is my home,” it said. “The Farm is the best place in the 
+world. There is a lot of food, a pond to swim in, and all of my friends live there too.”
+
+Suddenly the funny looking thing was very sad. “I think I’m really lost,” 
+it said.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="oscar6Eyelids" id="nEQ-4l-5OG">
+                                <rect key="frame" x="348" y="176" width="14" height="13"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
@@ -340,8 +371,16 @@ eyes. “What a funny looking animal,” he thought.
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="duckEyeImageView" destination="nEQ-4l-5OG" id="MdI-gG-IK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0r-uO-38a" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DnQ-AR-m8t">
+                    <connections>
+                        <action selector="onDuckTap:" destination="Yz5-vh-ApC" id="93i-Lt-9do"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4394.5" y="349.5"/>
         </scene>
@@ -353,11 +392,38 @@ eyes. “What a funny looking animal,” he thought.
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0868" id="MCv-Qg-cOu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg7" id="wfp-Oi-GCq">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree7-1" id="SuK-L0-8Of">
+                                <rect key="frame" x="435" y="37" width="122" height="318"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tree7-2" id="ceK-7k-YyT">
+                                <rect key="frame" x="502" y="45" width="102" height="304"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R7j-y5-lh5">
+                                <rect key="frame" x="81" y="9" width="406" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Jack felt bad. He wanted to help. “Don’t be sad,” he said. “I’ll help you find the farm, but first tell me your name.”
+“My name is Oscar, Oscar the duck.” 
+“Nice to meet you Oscar,” said Jack. “I’m Jack, Jack the dog.”
+“Nice to meet you Jack,” said Oscar.
+Oscar was very tired. He hadn’t slept at 
+all. He was flying when the storm came 
+and a big wind took him far away. When 
+the wind put him down, he was in Jack’s 
+yard. Now he was very hungry.
+Jack took Oscar to his house. 
+“Eat some food,” said Jack.
+</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1206,8 +1272,6 @@ Design Mario Olmos</string>
     </scenes>
     <resources>
         <image name="IMG_0862" width="667" height="375"/>
-        <image name="IMG_0867" width="667" height="375"/>
-        <image name="IMG_0868" width="667" height="375"/>
         <image name="IMG_0869" width="667" height="375"/>
         <image name="IMG_0870" width="667" height="375"/>
         <image name="IMG_0871" width="667" height="375"/>
@@ -1229,9 +1293,12 @@ Design Mario Olmos</string>
         <image name="bg3" width="567" height="375"/>
         <image name="bg4" width="567" height="375"/>
         <image name="bg5" width="567" height="375"/>
+        <image name="bg6" width="567" height="375"/>
+        <image name="bg7" width="567" height="375"/>
         <image name="houses3" width="148" height="82"/>
         <image name="houses5" width="134" height="74"/>
         <image name="jack2" width="125" height="257"/>
+        <image name="jack6" width="87" height="179"/>
         <image name="oscar5" width="52" height="70"/>
         <image name="bg20" width="667" height="375"/>
         <image name="bg21" width="667" height="375"/>
@@ -1261,6 +1328,8 @@ Design Mario Olmos</string>
         <image name="tree17-3" width="71" height="138"/>
         <image name="tree18-1" width="139" height="170"/>
         <image name="tree18-2" width="104" height="199"/>
+        <image name="oscar6" width="70" height="149"/>
+        <image name="oscar6Eyelids" width="14" height="13"/>
         <image name="tree2-1" width="28" height="193"/>
         <image name="tree2-2" width="27" height="195"/>
         <image name="tree2-3" width="29" height="209"/>
@@ -1272,5 +1341,7 @@ Design Mario Olmos</string>
         <image name="tree20" width="85" height="199"/>
         <image name="tree21-1" width="19" height="138"/>
         <image name="tree21-2" width="26" height="154"/>
+        <image name="tree7-1" width="38" height="269"/>
+        <image name="tree7-2" width="39" height="267"/>
     </resources>
 </document>
