@@ -9,6 +9,12 @@
 import UIKit
 
 class FourteenthPageViewController: UIViewController {
+    @IBOutlet weak var hillOne: UIImageView!
+    @IBOutlet weak var hillTwo: UIImageView!
+    @IBOutlet weak var hillThree: UIImageView!
+    @IBOutlet weak var house: UIImageView!
+    @IBOutlet weak var treeOne: UIImageView!
+    @IBOutlet weak var treeTwo: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +28,6 @@ class FourteenthPageViewController: UIViewController {
     }
     
 
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toFifteenthSegue", sender: nil)
-    }
     /*
     // MARK: - Navigation
 
