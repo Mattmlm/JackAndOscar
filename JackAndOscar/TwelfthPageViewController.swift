@@ -13,6 +13,7 @@ class TwelfthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        flashlight.alpha = 0
 
         // Do any additional setup after loading the view.
     }
@@ -29,19 +30,18 @@ class TwelfthPageViewController: UIViewController {
             movedFlashlightFrame.origin.x = movedFlashlightFrame.origin.x + 15
             
             
-            UIView.addKeyframeWithRelativeStartTime(1.0, relativeDuration: 0.2, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(1.0, relativeDuration: 1.0, animations: { () -> Void in
                 self.flashlight.frame = movedFlashlightFrame
             })
-            UIView.addKeyframeWithRelativeStartTime(2.0, relativeDuration: 2.0, animations: { () -> Void in
-                self.flashlight.alpha = 1
-            })
             
-            UIView.addKeyframeWithRelativeStartTime(5.0, relativeDuration: 0.2, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(1.0, relativeDuration: 2.0, animations: { () -> Void in
                 self.flashlight.frame = originalFlashlightFrame
             })
-            UIView.addKeyframeWithRelativeStartTime(6.0, relativeDuration: 2.0, animations: { () -> Void in
-                self.flashlight.alpha = 0
-            })
+            
+            UIView.animateWithDuration(2.5, animations: { () -> Void in
+                self.flashlight.hidden = false
+                self.flashlight.alpha = 1
+                }, completion: nil)
             
             }, completion: nil)
     }
