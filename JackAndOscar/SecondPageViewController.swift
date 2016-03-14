@@ -46,18 +46,9 @@ class SecondPageViewController: UIViewController {
     @IBAction func onDogTap(sender: AnyObject) {
         
         eyesImageView.image = animatedImage
-        delay(1.0) {
+        Utils().delay(1.0) {
             self.eyesImageView.image = nil
         }
-    }
-    
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
     }
 
     /*
