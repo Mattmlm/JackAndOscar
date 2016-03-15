@@ -68,7 +68,7 @@
 		5A76BE3D1C8D41DF0034EA1D /* NineteenthPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NineteenthPageViewController.swift; sourceTree = "<group>"; };
 		5A76BE3F1C8D41F50034EA1D /* TwentiethPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentiethPageViewController.swift; sourceTree = "<group>"; };
 		5A76BE411C8D43770034EA1D /* TwentyFirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentyFirstPageViewController.swift; sourceTree = "<group>"; };
-		74E4BD551C96908500275C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		74E4BD551C96908500275C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorytimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
