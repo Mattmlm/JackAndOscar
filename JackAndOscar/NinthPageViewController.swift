@@ -15,7 +15,6 @@ class NinthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textLabel.hidden = true
         textLabel.alpha = 0
         // Do any additional setup after loading the view.
@@ -42,12 +41,8 @@ class NinthPageViewController: UIViewController {
     
         //blinking
         
-        // JackEyelids must not be hidden, though you can't see it because of the alpha
-        self.jackEyelids.hidden = false
-        self.jackEyelids.alpha = 0
-        
-        UIView.animateKeyframesWithDuration(2.5, delay: 0.5, options: .Repeat, animations: { () -> Void in
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.001, animations: { () -> Void in
+        UIView.animateKeyframesWithDuration(5, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.1, relativeDuration: 0.001, animations: { () -> Void in
                 self.jackEyelids.alpha = 1
             })
             
@@ -72,6 +67,10 @@ class NinthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func onNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("toTenthSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

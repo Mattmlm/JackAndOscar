@@ -10,6 +10,7 @@
 		5A1314AC1C8577CB0033F37C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1314AB1C8577CB0033F37C /* AppDelegate.swift */; };
 		5A1314AE1C8577CB0033F37C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1314AD1C8577CB0033F37C /* ViewController.swift */; };
 		5A1314B11C8577CB0033F37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314AF1C8577CB0033F37C /* Main.storyboard */; };
+		5A1314B31C8577CB0033F37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314B21C8577CB0033F37C /* Assets.xcassets */; };
 		5A1314B61C8577CB0033F37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1314B41C8577CB0033F37C /* LaunchScreen.storyboard */; };
 		5A54F43D1C94DA4500781798 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54F43C1C94DA4500781798 /* InitialViewController.swift */; };
 		5A54F4411C96501A00781798 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54F4401C96501A00781798 /* Utils.swift */; };
@@ -34,7 +35,6 @@
 		5A76BE3E1C8D41DF0034EA1D /* NineteenthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE3D1C8D41DF0034EA1D /* NineteenthPageViewController.swift */; };
 		5A76BE401C8D41F50034EA1D /* TwentiethPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE3F1C8D41F50034EA1D /* TwentiethPageViewController.swift */; };
 		5A76BE421C8D43770034EA1D /* TwentyFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76BE411C8D43770034EA1D /* TwentyFirstPageViewController.swift */; };
-		74E4BD561C96908500275C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E4BD551C96908500275C53 /* Assets.xcassets */; };
 		90E6FE191C90E337004AFD45 /* StorytimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +43,7 @@
 		5A1314AB1C8577CB0033F37C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A1314AD1C8577CB0033F37C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A1314B01C8577CB0033F37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A1314B21C8577CB0033F37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1314B51C8577CB0033F37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1314B71C8577CB0033F37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A54F43C1C94DA4500781798 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				5A1314AA1C8577CB0033F37C /* JackAndOscar */,
-				74E4BD551C96908500275C53 /* Assets.xcassets */,
 				5A1314A91C8577CB0033F37C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +107,7 @@
 				5A1314AD1C8577CB0033F37C /* ViewController.swift */,
 				5A1314AF1C8577CB0033F37C /* Main.storyboard */,
 				90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */,
+				5A1314B21C8577CB0033F37C /* Assets.xcassets */,
 				5A1314B41C8577CB0033F37C /* LaunchScreen.storyboard */,
 				5A1314B71C8577CB0033F37C /* Info.plist */,
 				5A76BE191C8D33D60034EA1D /* FirstPageViewController.swift */,
@@ -196,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1314B61C8577CB0033F37C /* LaunchScreen.storyboard in Resources */,
-				74E4BD561C96908500275C53 /* Assets.xcassets in Resources */,
+				5A1314B31C8577CB0033F37C /* Assets.xcassets in Resources */,
 				5A1314B11C8577CB0033F37C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
