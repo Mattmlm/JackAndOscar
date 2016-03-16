@@ -41,8 +41,11 @@ class NinthPageViewController: UIViewController {
     
         //blinking
         
-        UIView.animateKeyframesWithDuration(5, delay: 0.5, options: .Repeat, animations: { () -> Void in
-            UIView.addKeyframeWithRelativeStartTime(0.1, relativeDuration: 0.001, animations: { () -> Void in
+        self.jackEyelids.hidden = false
+        self.jackEyelids.alpha = 0
+        
+        UIView.animateKeyframesWithDuration(2.5, delay: 0.5, options: .Repeat, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.001, animations: { () -> Void in
                 self.jackEyelids.alpha = 1
             })
             
