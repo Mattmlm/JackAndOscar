@@ -1129,13 +1129,13 @@ They ate and then went to sleep in the warm, yellow hay.</string>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jack17" id="nYG-H1-Psj">
-                                        <rect key="frame" x="258" y="118" width="115" height="213"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree18-1" id="ptQ-iU-WmD">
+                                        <rect key="frame" x="700" y="161" width="139" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree18-1" id="ptQ-iU-WmD">
-                                        <rect key="frame" x="700" y="161" width="139" height="170"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jack17" id="nYG-H1-Psj">
+                                        <rect key="frame" x="258" y="118" width="115" height="213"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>

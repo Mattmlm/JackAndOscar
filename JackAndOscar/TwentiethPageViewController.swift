@@ -20,6 +20,8 @@ class TwentiethPageViewController: UIViewController {
     @IBOutlet weak var JackView: UIImageView!
     @IBOutlet weak var friendsView: UIView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
