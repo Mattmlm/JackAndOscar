@@ -17,8 +17,6 @@ class EighthPageViewController: UIViewController {
         super.viewDidLoad()
         self.oscarEyelids.hidden = false
         self.oscarEyelids.alpha = 0
-        textLabel.hidden = true
-        textLabel.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,8 +15,6 @@ class NinthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textLabel.hidden = true
-        textLabel.alpha = 0
         // Do any additional setup after loading the view.
     }
     

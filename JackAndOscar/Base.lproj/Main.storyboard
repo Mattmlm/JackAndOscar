@@ -716,12 +716,12 @@ eating grass by the fence. </string>
                                 <rect key="frame" x="-1" y="-2" width="668" height="377"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cow13" id="arR-AH-DJS">
-                                <rect key="frame" x="210" y="128" width="246" height="233"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cow13Arm" id="HoO-Tp-EfC">
                                 <rect key="frame" x="393" y="232" width="66" height="37"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cow13" id="arR-AH-DJS">
+                                <rect key="frame" x="210" y="128" width="246" height="233"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2HM-mc-bZB">
