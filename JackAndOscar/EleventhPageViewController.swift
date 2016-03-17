@@ -56,10 +56,6 @@ class EleventhPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toTwelfthSegue", sender: nil)
-    }
-    
 
     /*
     // MARK: - Navigation

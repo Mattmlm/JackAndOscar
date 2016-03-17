@@ -55,13 +55,6 @@ class NinthPageViewController: UIViewController {
             
             }, completion: nil)
     
-        //text
-        
-        UIView.animateWithDuration(2.5, animations: { () -> Void in
-            self.textLabel.hidden = false
-            self.textLabel.alpha = 1
-            }, completion: nil)
-    
     }
 
     
@@ -70,10 +63,6 @@ class NinthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toTenthSegue", sender: nil)
-    }
     /*
     // MARK: - Navigation
 

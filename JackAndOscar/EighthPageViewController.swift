@@ -26,10 +26,6 @@ class EighthPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onNextButton(sender: AnyObject) {
-        performSegueWithIdentifier("toNinthSegue", sender: nil)
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     
@@ -47,13 +43,6 @@ class EighthPageViewController: UIViewController {
             UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
                 self.oscarArm.frame = originalOscarArmFrame
             })
-            }, completion: nil)
-        
-        //text
-        
-            UIView.animateWithDuration(2.5, animations: { () -> Void in
-                self.textLabel.hidden = false
-                self.textLabel.alpha = 1
             }, completion: nil)
         
         
