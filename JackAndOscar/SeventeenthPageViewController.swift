@@ -12,10 +12,24 @@ class SeventeenthPageViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var jackView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scrollView.contentSize = CGSize(width: 1334, height: 375)
+        
+        let animate = CABasicAnimation()
+        animate.keyPath = "position.x"
+        animate.fromValue = 258
+        animate.toValue = 900
+        animate.duration = 3
+        
+        animate.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        
+        jackView.layer.addAnimation(animate, forKey: "basic")
+        
+        jackView.layer.position.x = 900
     }
 
     override func didReceiveMemoryWarning() {

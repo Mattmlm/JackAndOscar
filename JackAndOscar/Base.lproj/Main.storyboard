@@ -909,11 +909,6 @@ a loud, “Quack.”</string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="houses15" id="9Wl-28-yKx">
-                                <rect key="frame" x="87" y="258" width="212" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="trees15-1" id="6UY-ge-xWi">
                                 <rect key="frame" x="230" y="195" width="69" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -942,6 +937,11 @@ back home. </string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="houses15" id="9Wl-28-yKx">
+                                <rect key="frame" x="87" y="258" width="212" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -986,11 +986,6 @@ back home. </string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jeremy16" id="vEF-MT-wsN">
-                                <rect key="frame" x="325" y="178" width="75" height="114"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="lucy16" id="v51-bp-pzk">
                                 <rect key="frame" x="413" y="231" width="80" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1011,6 +1006,11 @@ They ate and then went to sleep in the warm, yellow hay.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jeremy16" id="vEF-MT-wsN">
+                                <rect key="frame" x="319" y="178" width="75" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1020,6 +1020,10 @@ They ate and then went to sleep in the warm, yellow hay.</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="jackView" destination="oAK-0b-pMK" id="5Fh-EF-lk8"/>
+                        <outlet property="jeremyView" destination="vEF-MT-wsN" id="J04-Mj-Z7j"/>
+                        <outlet property="lucyView" destination="v51-bp-pzk" id="6aB-g0-V8y"/>
+                        <outlet property="oscarView" destination="VCO-AT-Oth" id="blf-F9-Lws"/>
                         <segue destination="90i-uM-e7x" kind="push" identifier="toSeventeenthSegue" id="bml-YX-3Mh"/>
                     </connections>
                 </viewController>
@@ -1044,11 +1048,6 @@ They ate and then went to sleep in the warm, yellow hay.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg17" id="BUw-wO-v0h">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="IMG_0879" id="aUu-G3-Fgc">
                                         <rect key="frame" x="667" y="0.0" width="667" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1090,10 +1089,28 @@ They ate and then went to sleep in the warm, yellow hay.</string>
                                         <animations/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jack17" id="nYG-H1-Psj">
-                                        <rect key="frame" x="258" y="128" width="115" height="213"/>
+                                        <rect key="frame" x="258" y="118" width="115" height="213"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree18-1" id="ptQ-iU-WmD">
+                                        <rect key="frame" x="700" y="161" width="139" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WuA-gx-WvH">
+                                        <rect key="frame" x="701" y="15" width="453" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <string key="text">“Why are you sad,” asked Oscar.
+“I like my nice house on the quiet street, but I don’t have any friends there,” said Jack. “I wish I could live in a place like this.”
+“Well, you can,” said Oscar.
+“What?,” asked Jack.
+“Stay here and live with us,” said Oscar.</string>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PY-KS-ydE">
                                         <rect key="frame" x="42" y="0.0" width="446" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1105,27 +1122,14 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg17" id="BUw-wO-v0h">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WuA-gx-WvH">
-                                <rect key="frame" x="691" y="29" width="453" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <string key="text">“Why are you sad,” asked Oscar.
-“I like my nice house on the quiet street, but I don’t have any friends there,” said Jack. “I wish I could live in a place like this.”
-“Well, you can,” said Oscar.
-“What?,” asked Jack.
-“Stay here and live with us,” said Oscar.</string>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree18-1" id="ptQ-iU-WmD">
-                                <rect key="frame" x="691" y="160" width="139" height="170"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1136,6 +1140,7 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1334" height="375"/>
                     <connections>
+                        <outlet property="jackView" destination="nYG-H1-Psj" id="6xp-hX-e1W"/>
                         <outlet property="scrollView" destination="lUl-nl-4Y3" id="fDU-J0-Zjg"/>
                     </connections>
                 </viewController>
@@ -1156,8 +1161,30 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jack19-button" id="YBL-wI-NcZ">
+                                <rect key="frame" x="321" y="227" width="43" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fej-nx-Y6C">
+                                <rect key="frame" x="321" y="227" width="43" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="didPressJackBelly:" destination="eas-AM-jCa" eventType="touchUpInside" id="nKb-Xi-9NR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack was so happy he let out a big, “Ruff”." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FdN-Kz-gVU">
+                                <rect key="frame" x="195" y="29" width="260" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.95294117647058818" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" id="0uF-rB-K6j">
-                                <rect key="frame" x="425" y="20" width="110" height="141"/>
+                                <rect key="frame" x="453" y="20" width="110" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="speech2-1" id="L0F-nJ-nOx">
@@ -1175,28 +1202,6 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                 </subviews>
                                 <animations/>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jack19-button" id="YBL-wI-NcZ">
-                                <rect key="frame" x="321" y="227" width="43" height="58"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fej-nx-Y6C">
-                                <rect key="frame" x="321" y="227" width="43" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="didPressJackBelly:" destination="eas-AM-jCa" eventType="touchUpInside" id="nKb-Xi-9NR"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack was so happy he let out a big, “Ruff”." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FdN-Kz-gVU">
-                                <rect key="frame" x="183" y="12" width="433" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.99607843137254903" green="0.95294117647058818" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1280,11 +1285,6 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree20" id="vlw-ax-yAc">
-                                <rect key="frame" x="88" y="142" width="85" height="199"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vAk-W0-YOa">
                                 <rect key="frame" x="200" y="207" width="63" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1319,11 +1319,6 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="speech2-1" id="iRp-pU-Ack">
-                                <rect key="frame" x="248" y="89" width="75" height="124"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <animations/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" text="meow, meow" textAlignment="natural" id="7NE-XB-lTN">
                                 <rect key="frame" x="458" y="135" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1346,7 +1341,7 @@ Then he remembered that he didn’t live at the farm and he was sad.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S3z-S0-zKJ">
-                                <rect key="frame" x="154" y="34" width="440" height="83"/>
+                                <rect key="frame" x="88" y="0.0" width="440" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <string key="text">Now he lives on the farm with his friends, Oscar the duck, 
@@ -1356,6 +1351,35 @@ Jeremy the pig, and Lucy the cat.
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree20" id="vlw-ax-yAc">
+                                <rect key="frame" x="48" y="142" width="85" height="199"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="DHO-OG-pz4">
+                                <rect key="frame" x="314" y="73" width="110" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="speech2-1" id="b4h-dj-WOC">
+                                        <rect key="frame" x="20" y="2" width="75" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" text="Quack" textAlignment="natural" id="shI-gz-YWC">
+                                        <rect key="frame" x="31" y="36" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="speech2-1" id="iRp-pU-Ack">
+                                        <rect key="frame" x="20" y="9" width="75" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
