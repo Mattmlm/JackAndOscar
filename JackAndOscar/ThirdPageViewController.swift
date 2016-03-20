@@ -19,6 +19,8 @@ class ThirdPageViewController: UIViewController, UIScrollViewDelegate {
         textLabel.hidden = true
         foregroundView.transform = CGAffineTransformMakeScale(2, 2)
         
+        CurrentView.instance.setView(2, view: self)
+        
     }
     
     override func viewDidAppear(animated: Bool) {
