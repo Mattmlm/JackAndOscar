@@ -19,17 +19,21 @@ class SeventeenthPageViewController: UIViewController {
 
         scrollView.contentSize = CGSize(width: 1334, height: 375)
         
-        let animate = CABasicAnimation()
-        animate.keyPath = "position.x"
-        animate.fromValue = 258
-        animate.toValue = 900
-        animate.duration = 3
+        UIView.animateWithDuration(5.0, delay: 5.0, options: [], animations: {
+            self.scrollView.contentOffset = CGPointMake(667, 0);
+            
+            let animate = CABasicAnimation()
+            animate.keyPath = "position.x"
+            animate.fromValue = 258
+            animate.toValue = 900
+            animate.duration = 3
+            animate.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+            self.jackView.layer.addAnimation(animate, forKey: "basic")
+            self.jackView.layer.position.x = 900
+            }, completion: { (finished: Bool) -> Void in
+        })
+
         
-        animate.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        
-        jackView.layer.addAnimation(animate, forKey: "basic")
-        
-        jackView.layer.position.x = 900
     }
 
     override func didReceiveMemoryWarning() {

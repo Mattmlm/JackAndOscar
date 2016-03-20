@@ -10,8 +10,26 @@ import UIKit
 
 class FifteenthPageViewController: UIViewController {
 
+    @IBOutlet weak var houseTreesView: UIView!
+    @IBOutlet weak var landView: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textLabel.hidden = true
+        houseTreesView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.houseTreesView.transform = CGAffineTransformMakeScale(1.3, 1.3)
+            self.landView.transform = CGAffineTransformMakeScale(1.1, 1.1)
+            }) { (Bool) -> Void in
+                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                    self.textLabel.hidden = false
+                    }, completion: nil)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
