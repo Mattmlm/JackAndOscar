@@ -24,7 +24,7 @@ class TwelfthPageViewController: UIViewController {
         
         //flashlight
         
-        UIView.animateKeyframesWithDuration(2.0, delay: 0.5, options: .Repeat, animations: { () -> Void in
+        UIView.animateKeyframesWithDuration(15.0, delay: 0.5, options: .Repeat, animations: { () -> Void in
             let originalFlashlightFrame = self.flashlight.frame
             var movedFlashlightFrame = originalFlashlightFrame
             movedFlashlightFrame.origin.x = movedFlashlightFrame.origin.x + 15
