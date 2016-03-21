@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ContainerViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +22,30 @@ class ContainerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func playAudio(soundName: String) {
+        let audioSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(soundName, ofType: "aiff")!)
+        do {
+            let audioPlayer = try AVAudioPlayer(contentsOfURL: audioSound)
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        } catch {
+            print("error")
+        }
+    }
+    
     @IBAction func onDismissTap() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    @IBAction func onAudioTap(sender: AnyObject) {
+        let viewInfo = CurrentView.instance.getView()
+        
+        switch viewInfo.number {
+        case 1:
+            playAudio("Page-01")
+        default:
+            print("Somethin else")
+        }
     }
 
     /*

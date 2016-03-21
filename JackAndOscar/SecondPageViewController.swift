@@ -8,8 +8,7 @@
 
 import UIKit
 
-class SecondPageViewController: UIViewController {
-
+class SecondPageViewController: UIViewController {    
     @IBOutlet weak var eyesImageView: UIImageView!
     
     var image_1: UIImage!
@@ -31,7 +30,8 @@ class SecondPageViewController: UIViewController {
         
         images = [image_1, image_2, image_3, image_4]
         animatedImage = UIImage.animatedImageWithImages(images, duration:0.6)
-
+        
+        CurrentView.instance.setView(1, view: self)
     }
 
     override func didReceiveMemoryWarning() {
