@@ -37,6 +37,8 @@ class FourthPageViewController: UIViewController {
         animatedImage = UIImage.animatedImageWithImages(images, duration:0.6)
         
         rainImageView.image = animatedImage
+        
+         CurrentView.instance.setView(3, view: self)
        
     }
 

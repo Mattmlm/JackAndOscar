@@ -39,6 +39,16 @@
 		5A8B97121C9F472C00CFE704 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8B97111C9F472C00CFE704 /* CurrentView.swift */; };
 		5A8B97161C9F5C8700CFE704 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97151C9F5C8700CFE704 /* Audio */; };
 		5A8B97181C9F5D5400CFE704 /* Page-01.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97171C9F5D5400CFE704 /* Page-01.aiff */; };
+		5A8B973C1CA0E23400CFE704 /* Kids Swing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B973B1CA0E23400CFE704 /* Kids Swing.mp3 */; };
+		5A8B973E1CA0E54900CFE704 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8B973D1CA0E54900CFE704 /* FadeTransition.swift */; };
+		5A8B97401CA0E57300CFE704 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8B973F1CA0E57300CFE704 /* BaseTransition.swift */; };
+		5A8B97421CA0E84300CFE704 /* Intro.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97411CA0E84300CFE704 /* Intro.aiff */; };
+		5A8B97471CA0E85400CFE704 /* Page-03.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97431CA0E85400CFE704 /* Page-03.aiff */; };
+		5A8B97481CA0E85400CFE704 /* Page-04.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97441CA0E85400CFE704 /* Page-04.aiff */; };
+		5A8B97491CA0E85400CFE704 /* Page-05.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97451CA0E85400CFE704 /* Page-05.aiff */; };
+		5A8B974A1CA0E85400CFE704 /* Page-06.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97461CA0E85400CFE704 /* Page-06.aiff */; };
+		5A8B974C1CA0E87900CFE704 /* Page-02.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B974B1CA0E87900CFE704 /* Page-02.aiff */; };
+		5A8B974E1CA0E8B800CFE704 /* Page-07.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */; };
 		90E6FE191C90E337004AFD45 /* StorytimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +87,16 @@
 		5A8B97111C9F472C00CFE704 /* CurrentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		5A8B97151C9F5C8700CFE704 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		5A8B97171C9F5D5400CFE704 /* Page-01.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "Page-01.aiff"; sourceTree = "<group>"; };
+		5A8B973B1CA0E23400CFE704 /* Kids Swing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Kids Swing.mp3"; path = "Audio/Kids Swing.mp3"; sourceTree = "<group>"; };
+		5A8B973D1CA0E54900CFE704 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		5A8B973F1CA0E57300CFE704 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		5A8B97411CA0E84300CFE704 /* Intro.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = Intro.aiff; path = Audio/Intro.aiff; sourceTree = "<group>"; };
+		5A8B97431CA0E85400CFE704 /* Page-03.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-03.aiff"; path = "Audio/Page-03.aiff"; sourceTree = "<group>"; };
+		5A8B97441CA0E85400CFE704 /* Page-04.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-04.aiff"; path = "Audio/Page-04.aiff"; sourceTree = "<group>"; };
+		5A8B97451CA0E85400CFE704 /* Page-05.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-05.aiff"; path = "Audio/Page-05.aiff"; sourceTree = "<group>"; };
+		5A8B97461CA0E85400CFE704 /* Page-06.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-06.aiff"; path = "Audio/Page-06.aiff"; sourceTree = "<group>"; };
+		5A8B974B1CA0E87900CFE704 /* Page-02.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-02.aiff"; path = "Audio/Page-02.aiff"; sourceTree = "<group>"; };
+		5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-07.aiff"; path = "Audio/Page-07.aiff"; sourceTree = "<group>"; };
 		90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorytimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				5A8B97171C9F5D5400CFE704 /* Page-01.aiff */,
+				5A8B973B1CA0E23400CFE704 /* Kids Swing.mp3 */,
+				5A8B97411CA0E84300CFE704 /* Intro.aiff */,
+				5A8B97431CA0E85400CFE704 /* Page-03.aiff */,
+				5A8B97441CA0E85400CFE704 /* Page-04.aiff */,
+				5A8B97451CA0E85400CFE704 /* Page-05.aiff */,
+				5A8B97461CA0E85400CFE704 /* Page-06.aiff */,
+				5A8B974B1CA0E87900CFE704 /* Page-02.aiff */,
+				5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */,
 				5A8B97151C9F5C8700CFE704 /* Audio */,
 				5A1314AB1C8577CB0033F37C /* AppDelegate.swift */,
+				5A8B973D1CA0E54900CFE704 /* FadeTransition.swift */,
+				5A8B973F1CA0E57300CFE704 /* BaseTransition.swift */,
 				5A1314AD1C8577CB0033F37C /* ViewController.swift */,
 				5A1314AF1C8577CB0033F37C /* Main.storyboard */,
 				90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */,
@@ -208,10 +238,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1314B61C8577CB0033F37C /* LaunchScreen.storyboard in Resources */,
+				5A8B97481CA0E85400CFE704 /* Page-04.aiff in Resources */,
+				5A8B97421CA0E84300CFE704 /* Intro.aiff in Resources */,
+				5A8B973C1CA0E23400CFE704 /* Kids Swing.mp3 in Resources */,
+				5A8B974C1CA0E87900CFE704 /* Page-02.aiff in Resources */,
 				5A1314B31C8577CB0033F37C /* Assets.xcassets in Resources */,
 				5A8B97181C9F5D5400CFE704 /* Page-01.aiff in Resources */,
+				5A8B97471CA0E85400CFE704 /* Page-03.aiff in Resources */,
+				5A8B97491CA0E85400CFE704 /* Page-05.aiff in Resources */,
 				5A1314B11C8577CB0033F37C /* Main.storyboard in Resources */,
 				5A8B97161C9F5C8700CFE704 /* Audio in Resources */,
+				5A8B974A1CA0E85400CFE704 /* Page-06.aiff in Resources */,
+				5A8B974E1CA0E8B800CFE704 /* Page-07.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A76BE261C8D41220034EA1D /* SeventhPageViewController.swift in Sources */,
+				5A8B97401CA0E57300CFE704 /* BaseTransition.swift in Sources */,
 				5A76BE3A1C8D41C30034EA1D /* SeventeenthPageViewController.swift in Sources */,
 				5A76BE341C8D41970034EA1D /* FourteenthPageViewController.swift in Sources */,
 				5A76BE1A1C8D33D60034EA1D /* FirstPageViewController.swift in Sources */,
+				5A8B973E1CA0E54900CFE704 /* FadeTransition.swift in Sources */,
 				5A76BE3E1C8D41DF0034EA1D /* NineteenthPageViewController.swift in Sources */,
 				5A54F4411C96501A00781798 /* Utils.swift in Sources */,
 				5A76BE281C8D413F0034EA1D /* EighthPageViewController.swift in Sources */,

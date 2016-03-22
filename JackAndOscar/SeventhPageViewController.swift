@@ -13,7 +13,7 @@ class SeventhPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        CurrentView.instance.setView(6, view: self)
     }
 
     override func didReceiveMemoryWarning() {

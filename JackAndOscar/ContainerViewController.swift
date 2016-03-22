@@ -9,7 +9,12 @@
 import UIKit
 import AVFoundation
 
-class ContainerViewController: UIViewController {
+class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    
+    var audioPlayer: AVAudioPlayer!
+    var audioRecorder: AVAudioRecorder!
+    
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +29,12 @@ class ContainerViewController: UIViewController {
     
     func playAudio(soundName: String) {
         let audioSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(soundName, ofType: "aiff")!)
-        do {
-            let audioPlayer = try AVAudioPlayer(contentsOfURL: audioSound)
+            try! audioPlayer = AVAudioPlayer(contentsOfURL: audioSound)
+            audioPlayer.delegate = self
+            
             audioPlayer.prepareToPlay()
             audioPlayer.play()
-        } catch {
-            print("error")
-        }
     }
-    
-    var audioRecorder: AVAudioRecorder!
     
     func record() {
         let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
@@ -60,6 +61,7 @@ class ContainerViewController: UIViewController {
                     ]
                     
                     try! self.audioRecorder = AVAudioRecorder(URL: url, settings: settings)
+                    self.audioRecorder.delegate = self
                 } else {
                     print("not granted")
                 }
@@ -69,7 +71,7 @@ class ContainerViewController: UIViewController {
     }
     
     @IBAction func onDismissTap() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func onAudioTap(sender: AnyObject) {
@@ -78,6 +80,18 @@ class ContainerViewController: UIViewController {
         switch viewInfo.number {
         case 1:
             playAudio("Page-01")
+        case 2:
+            playAudio("Page-02")
+        case 3:
+            playAudio("Page-03")
+        case 4:
+            playAudio("Page-04")
+        case 5:
+            playAudio("Page-05")
+        case 6:
+            playAudio("Page-06")
+        case 7:
+            playAudio("Page-07")
         default:
             print("Somethin else")
         }

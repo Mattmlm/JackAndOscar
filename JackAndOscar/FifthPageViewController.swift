@@ -31,6 +31,8 @@ class FifthPageViewController: UIViewController {
         
         oscarImageView.layer.position.x = 442
         
+         CurrentView.instance.setView(4, view: self)
+        
     }
 
     override func didReceiveMemoryWarning() {

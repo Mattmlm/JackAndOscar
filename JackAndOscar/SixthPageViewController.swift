@@ -16,8 +16,7 @@ class SixthPageViewController: UIViewController {
         super.viewDidLoad()
         duckEyeImageView.hidden = true
 
-        // Do any additional setup after loading the view.
-    }
+         CurrentView.instance.setView(5, view: self)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
