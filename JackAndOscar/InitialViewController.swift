@@ -10,15 +10,24 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
+    var fadeTransition: FadeTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationViewController = segue.destinationViewController as UIViewController!
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        fadeTransition = FadeTransition()
+        destinationViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 0.5
     }
     
     @IBAction func onReadMyselfButton(sender: AnyObject) {
