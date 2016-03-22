@@ -11,6 +11,8 @@ import AVFoundation
 
 class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
     
+    @IBOutlet weak var audioControlsView: UIView!
+    
     var audioPlayer: AVAudioPlayer!
     var audioRecorder: AVAudioRecorder!
     
@@ -19,7 +21,26 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      audioControlsView.hidden = true
+        
+        let fileManager = NSFileManager.defaultManager()
+        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        let documentDirectory = urls[0] as NSURL
+        let soundURL = documentDirectory.URLByAppendingPathComponent("sound.aiff")
+        
+        let recordSettings = [AVSampleRateKey: 44100.0,
+            AVNumberOfChannelsKey: 2,
+            AVEncoderAudioQualityKey: AVAudioQuality.Min.rawValue,
+            AVEncoderBitRateKey: 16
+        ]
+        
+        let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
+       
+            try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try! audioRecorder = AVAudioRecorder(URL: soundURL, settings: recordSettings as! [String : AnyObject])
+            audioRecorder.delegate = self
+            audioRecorder.prepareToRecord()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,39 +57,6 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             audioPlayer.play()
     }
     
-    func record() {
-        let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
-        
-        if (audioSession.respondsToSelector("requestToRecordPermission:")) {
-            AVAudioSession.sharedInstance().requestRecordPermission({(granted: Bool) -> Void in
-                if granted {
-                    print("granted")
-                    
-                    try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
-                    try! audioSession.setActive(true)
-                    
-                    let documentsDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
-                    let fullPath = documentsDirectory.stringByAppendingString("voiceRecording.caf")
-                    let url = NSURL.fileURLWithPath(fullPath)
-                    
-                    let settings: [String: AnyObject] = [
-                        AVFormatIDKey:Int(kAudioFormatAppleIMA4), //Int required in Swift2
-                        AVSampleRateKey:44100.0,
-                        AVNumberOfChannelsKey:2,
-                        AVEncoderBitRateKey:12800,
-                        AVLinearPCMBitDepthKey:16,
-                        AVEncoderAudioQualityKey:AVAudioQuality.Max.rawValue
-                    ]
-                    
-                    try! self.audioRecorder = AVAudioRecorder(URL: url, settings: settings)
-                    self.audioRecorder.delegate = self
-                } else {
-                    print("not granted")
-                }
-            })
-        }
-
-    }
     
     @IBAction func onDismissTap() {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -121,6 +109,18 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
         }
     }
     @IBAction func onRecordTap(sender: AnyObject) {
+        audioControlsView.hidden = false
     }
-
+    
+    @IBAction func onStart(sender: AnyObject) {
+        audioRecorder.record()
+    }
+    
+    @IBAction func onStop(sender: AnyObject) {
+        audioRecorder.stop()
+    }
+    
+    @IBAction func onPlay(sender: AnyObject) {
+        playAudio("")
+    }
 }
