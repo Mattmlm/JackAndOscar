@@ -21,7 +21,7 @@ class FourteenthPageViewController: UIViewController {
         super.viewDidLoad()
         self.house.hidden = true
         self.house.alpha = 0
-
+        CurrentView.instance.setView(13, view: self)
         // Do any additional setup after loading the view.
     }
 

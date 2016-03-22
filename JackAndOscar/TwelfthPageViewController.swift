@@ -14,7 +14,7 @@ class TwelfthPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         flashlight.alpha = 0
-
+        CurrentView.instance.setView(11, view: self)
         // Do any additional setup after loading the view.
     }
 

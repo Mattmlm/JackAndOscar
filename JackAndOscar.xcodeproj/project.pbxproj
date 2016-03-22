@@ -49,6 +49,13 @@
 		5A8B974A1CA0E85400CFE704 /* Page-06.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B97461CA0E85400CFE704 /* Page-06.aiff */; };
 		5A8B974C1CA0E87900CFE704 /* Page-02.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B974B1CA0E87900CFE704 /* Page-02.aiff */; };
 		5A8B974E1CA0E8B800CFE704 /* Page-07.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */; };
+		747B9CE61CA0F1F700965250 /* Page-08.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CDF1CA0F1F700965250 /* Page-08.aiff */; };
+		747B9CE71CA0F1F700965250 /* Page-09.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE01CA0F1F700965250 /* Page-09.aiff */; };
+		747B9CE81CA0F1F700965250 /* Page-10.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE11CA0F1F700965250 /* Page-10.aiff */; };
+		747B9CE91CA0F1F700965250 /* Page-11.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE21CA0F1F700965250 /* Page-11.aiff */; };
+		747B9CEA1CA0F1F700965250 /* Page-12.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE31CA0F1F700965250 /* Page-12.aiff */; };
+		747B9CEB1CA0F1F700965250 /* Page-13.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE41CA0F1F700965250 /* Page-13.aiff */; };
+		747B9CEC1CA0F1F700965250 /* Page-14.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 747B9CE51CA0F1F700965250 /* Page-14.aiff */; };
 		90E6FE191C90E337004AFD45 /* StorytimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +104,13 @@
 		5A8B97461CA0E85400CFE704 /* Page-06.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-06.aiff"; path = "Audio/Page-06.aiff"; sourceTree = "<group>"; };
 		5A8B974B1CA0E87900CFE704 /* Page-02.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-02.aiff"; path = "Audio/Page-02.aiff"; sourceTree = "<group>"; };
 		5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-07.aiff"; path = "Audio/Page-07.aiff"; sourceTree = "<group>"; };
+		747B9CDF1CA0F1F700965250 /* Page-08.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-08.aiff"; path = "Audio/Page-08.aiff"; sourceTree = "<group>"; };
+		747B9CE01CA0F1F700965250 /* Page-09.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-09.aiff"; path = "Audio/Page-09.aiff"; sourceTree = "<group>"; };
+		747B9CE11CA0F1F700965250 /* Page-10.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-10.aiff"; path = "Audio/Page-10.aiff"; sourceTree = "<group>"; };
+		747B9CE21CA0F1F700965250 /* Page-11.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-11.aiff"; path = "Audio/Page-11.aiff"; sourceTree = "<group>"; };
+		747B9CE31CA0F1F700965250 /* Page-12.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-12.aiff"; path = "Audio/Page-12.aiff"; sourceTree = "<group>"; };
+		747B9CE41CA0F1F700965250 /* Page-13.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-13.aiff"; path = "Audio/Page-13.aiff"; sourceTree = "<group>"; };
+		747B9CE51CA0F1F700965250 /* Page-14.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "Page-14.aiff"; path = "Audio/Page-14.aiff"; sourceTree = "<group>"; };
 		90E6FE181C90E337004AFD45 /* StorytimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorytimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +153,13 @@
 				5A8B97461CA0E85400CFE704 /* Page-06.aiff */,
 				5A8B974B1CA0E87900CFE704 /* Page-02.aiff */,
 				5A8B974D1CA0E8B800CFE704 /* Page-07.aiff */,
+				747B9CDF1CA0F1F700965250 /* Page-08.aiff */,
+				747B9CE01CA0F1F700965250 /* Page-09.aiff */,
+				747B9CE11CA0F1F700965250 /* Page-10.aiff */,
+				747B9CE21CA0F1F700965250 /* Page-11.aiff */,
+				747B9CE31CA0F1F700965250 /* Page-12.aiff */,
+				747B9CE41CA0F1F700965250 /* Page-13.aiff */,
+				747B9CE51CA0F1F700965250 /* Page-14.aiff */,
 				5A8B97151C9F5C8700CFE704 /* Audio */,
 				5A1314AB1C8577CB0033F37C /* AppDelegate.swift */,
 				5A8B973D1CA0E54900CFE704 /* FadeTransition.swift */,
@@ -237,18 +258,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747B9CEB1CA0F1F700965250 /* Page-13.aiff in Resources */,
 				5A1314B61C8577CB0033F37C /* LaunchScreen.storyboard in Resources */,
+				747B9CEA1CA0F1F700965250 /* Page-12.aiff in Resources */,
 				5A8B97481CA0E85400CFE704 /* Page-04.aiff in Resources */,
 				5A8B97421CA0E84300CFE704 /* Intro.aiff in Resources */,
 				5A8B973C1CA0E23400CFE704 /* Kids Swing.mp3 in Resources */,
 				5A8B974C1CA0E87900CFE704 /* Page-02.aiff in Resources */,
+				747B9CEC1CA0F1F700965250 /* Page-14.aiff in Resources */,
 				5A1314B31C8577CB0033F37C /* Assets.xcassets in Resources */,
 				5A8B97181C9F5D5400CFE704 /* Page-01.aiff in Resources */,
+				747B9CE71CA0F1F700965250 /* Page-09.aiff in Resources */,
 				5A8B97471CA0E85400CFE704 /* Page-03.aiff in Resources */,
 				5A8B97491CA0E85400CFE704 /* Page-05.aiff in Resources */,
 				5A1314B11C8577CB0033F37C /* Main.storyboard in Resources */,
+				747B9CE81CA0F1F700965250 /* Page-10.aiff in Resources */,
 				5A8B97161C9F5C8700CFE704 /* Audio in Resources */,
 				5A8B974A1CA0E85400CFE704 /* Page-06.aiff in Resources */,
+				747B9CE61CA0F1F700965250 /* Page-08.aiff in Resources */,
+				747B9CE91CA0F1F700965250 /* Page-11.aiff in Resources */,
 				5A8B974E1CA0E8B800CFE704 /* Page-07.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
