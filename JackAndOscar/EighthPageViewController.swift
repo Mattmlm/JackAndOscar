@@ -17,6 +17,7 @@ class EighthPageViewController: UIViewController {
         super.viewDidLoad()
         self.oscarEyelids.hidden = false
         self.oscarEyelids.alpha = 0
+        CurrentView.instance.setView(7, view: self)
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,7 @@ class TenthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        CurrentView.instance.setView(9, view: self)
         treeView.transform = CGAffineTransformMakeScale(2, 2)
         // Do any additional setup after loading the view.
     }

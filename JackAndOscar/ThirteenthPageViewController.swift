@@ -15,6 +15,7 @@ class ThirteenthPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        CurrentView.instance.setView(12, view: self)
         
         let armFallOffGesture = UITapGestureRecognizer(target: self, action: "armFallsOff")
         armFallOffGesture.numberOfTapsRequired = 10;

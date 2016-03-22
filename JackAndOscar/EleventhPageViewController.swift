@@ -19,6 +19,7 @@ class EleventhPageViewController: UIViewController {
         self.duckPath.hidden = true
         self.duckPath.alpha = 0
         
+        CurrentView.instance.setView(10, view: self)
         // Do any additional setup after loading the view.
     }
 

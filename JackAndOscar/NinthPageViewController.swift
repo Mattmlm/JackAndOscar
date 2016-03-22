@@ -15,6 +15,7 @@ class NinthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        CurrentView.instance.setView(8, view: self)
         // Do any additional setup after loading the view.
     }
     
