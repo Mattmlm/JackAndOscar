@@ -18,6 +18,7 @@ class FifteenthPageViewController: UIViewController {
         
         textLabel.hidden = true
         houseTreesView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+        CurrentView.instance.setView(14, view: self)
     }
     
     override func viewDidAppear(animated: Bool) {

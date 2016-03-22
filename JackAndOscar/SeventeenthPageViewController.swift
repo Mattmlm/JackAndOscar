@@ -16,6 +16,8 @@ class SeventeenthPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CurrentView.instance.setView(16, view: self)
 
         scrollView.contentSize = CGSize(width: 1334, height: 375)
         

@@ -25,6 +25,8 @@ class TwentiethPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CurrentView.instance.setView(18, view: self)
+        
         self.catSpeech.alpha = 0
         self.catText.alpha = 0
         self.pigSpeech.alpha = 0

@@ -17,6 +17,8 @@ class SixteenthPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CurrentView.instance.setView(15, view: self)
 
         let animateJack = CABasicAnimation()
         animateJack.keyPath = "position.x"

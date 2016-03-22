@@ -17,6 +17,8 @@ class NineteenthPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CurrentView.instance.setView(17, view: self)
+        
         UIView.animateWithDuration(1.0, delay: 0, options: [.Repeat], animations: {
             self.jackBellyView.transform = CGAffineTransformMakeScale(1.1, 1.1)
             }, completion: nil)

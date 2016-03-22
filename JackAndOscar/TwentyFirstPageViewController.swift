@@ -12,8 +12,8 @@ class TwentyFirstPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        CurrentView.instance.setView(19, view: self)
     }
 
     override func didReceiveMemoryWarning() {
