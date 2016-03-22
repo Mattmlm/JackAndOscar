@@ -71,7 +71,7 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
     }
     
     @IBAction func onDismissTap() {
-            self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func onAudioTap(sender: AnyObject) {
@@ -92,21 +92,23 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             playAudio("Page-06")
         case 7:
             playAudio("Page-07")
+        case 8:
+            playAudio("Page-08")
+        case 9:
+            playAudio("Page-09")
+        case 10:
+            playAudio("Page-10")
+        case 11:
+            playAudio("Page-11")
+        case 12:
+            playAudio("Page-12")
+        case 13:
+            playAudio("Page-13")
         default:
             print("Somethin else")
         }
     }
     @IBAction func onRecordTap(sender: AnyObject) {
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
