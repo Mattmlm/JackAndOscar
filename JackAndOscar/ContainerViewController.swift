@@ -104,6 +104,18 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             playAudio("Page-12")
         case 13:
             playAudio("Page-13")
+        case 14:
+            playAudio("Page-14")
+        case 15:
+            playAudio("Page-15")
+        case 16:
+            playAudio("Page-16")
+        case 17:
+            playAudio("Pagr-17")
+        case 18:
+            playAudio("Page-18")
+        case 19:
+            playAudio("Page-19")
         default:
             print("Somethin else")
         }
