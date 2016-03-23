@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class InitialViewController: UIViewController {
 
@@ -14,7 +15,7 @@ class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,15 +34,5 @@ class InitialViewController: UIViewController {
     @IBAction func onReadMyselfButton(sender: AnyObject) {
         performSegueWithIdentifier("goToStorytimeSegue", sender: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

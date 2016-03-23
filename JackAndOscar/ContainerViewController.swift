@@ -11,8 +11,6 @@ import AVFoundation
 
 class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
     
-    @IBOutlet weak var audioControlsView: UIView!
-    
     var audioPlayer: AVAudioPlayer!
     var audioRecorder: AVAudioRecorder!
     
@@ -20,8 +18,6 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      audioControlsView.hidden = true
         
         let fileManager = NSFileManager.defaultManager()
         let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
@@ -57,7 +53,7 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             audioPlayer.play()
     }
     
-    
+       
     @IBAction func onDismissTap() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -108,19 +104,5 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             print("Somethin else")
         }
     }
-    @IBAction func onRecordTap(sender: AnyObject) {
-        audioControlsView.hidden = false
-    }
-    
-    @IBAction func onStart(sender: AnyObject) {
-        audioRecorder.record()
-    }
-    
-    @IBAction func onStop(sender: AnyObject) {
-        audioRecorder.stop()
-    }
-    
-    @IBAction func onPlay(sender: AnyObject) {
-        playAudio("")
-    }
+  
 }

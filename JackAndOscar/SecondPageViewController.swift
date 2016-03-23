@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
-class SecondPageViewController: UIViewController {    
+class SecondPageViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    
     @IBOutlet weak var eyesImageView: UIImageView!
+    @IBOutlet weak var audioControlsView: UIView!
+    
+    var audioPlayer: AVAudioPlayer!
+    var audioRecorder: AVAudioRecorder!
     
     var image_1: UIImage!
     var image_2: UIImage!
@@ -32,6 +38,26 @@ class SecondPageViewController: UIViewController {
         animatedImage = UIImage.animatedImageWithImages(images, duration:0.6)
         
         CurrentView.instance.setView(1, view: self)
+        
+        audioControlsView.hidden = true
+        
+        let fileManager = NSFileManager.defaultManager()
+        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        let documentDirectory = urls[0] as NSURL
+        let soundURL = documentDirectory.URLByAppendingPathComponent("sound.aiff")
+        
+        let recordSettings = [AVSampleRateKey: 44100.0,
+            AVNumberOfChannelsKey: 2,
+            AVEncoderAudioQualityKey: AVAudioQuality.Min.rawValue,
+            AVEncoderBitRateKey: 16
+        ]
+        
+        let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
+        
+        try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! audioRecorder = AVAudioRecorder(URL: soundURL, settings: recordSettings as! [String : AnyObject])
+        audioRecorder.delegate = self
+        audioRecorder.prepareToRecord()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +68,30 @@ class SecondPageViewController: UIViewController {
     @IBAction func onDismissTap(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    func audioplayBack(soundName: String) {
+        var audioSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(soundName, ofType: "aiff")!)
+        try! audioPlayer = AVAudioPlayer(contentsOfURL: audioRecorder.url)
+        audioPlayer.delegate = self
+        
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+    }
+    
+    @IBAction func onVoiceTap(sender: AnyObject) {
+        audioControlsView.hidden = false
+    }
+    
+    @IBAction func onStart(sender: AnyObject) {
+        audioRecorder.record()
+    }
+    
+    @IBAction func onStop(sender: AnyObject) {
+        audioRecorder.stop()
+    }
+    
+    @IBAction func onPlay(sender: AnyObject) {
+        audioplayBack("")
+    }
     
     @IBAction func onDogTap(sender: AnyObject) {
         
@@ -50,15 +100,5 @@ class SecondPageViewController: UIViewController {
             self.eyesImageView.image = nil
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
