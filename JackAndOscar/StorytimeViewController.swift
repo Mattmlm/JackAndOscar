@@ -28,6 +28,22 @@ class StorytimeViewController: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func turnPage() {
+        let index = CurrentView.instance.getView().number + 1
+        if (index < orderedViewControllers.count) {
+            setViewControllers([orderedViewControllers[index]],
+                direction: .Forward,
+                animated: true,
+                completion: { (complete) -> Void in
+                    if complete {
+                        if let vc = self.parentViewController as? ContainerViewController {
+                            vc.onAudioTap("blah")
+                        }
+                    }
+            })
+        }
+    }
+    
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.newPageViewController("Second"),
             self.newPageViewController("Third"),

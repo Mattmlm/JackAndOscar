@@ -93,6 +93,9 @@ class SecondPageViewController: UIViewController, AVAudioPlayerDelegate, AVAudio
         audioplayBack("")
     }
     
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+    }
+    
     @IBAction func onDogTap(sender: AnyObject) {
         
         eyesImageView.image = animatedImage

@@ -11,6 +11,9 @@ import AVFoundation
 
 class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
     
+    var storyboardController: StorytimeViewController!
+    var isAutoPlayOn: Bool = false
+    
     var audioPlayer: AVAudioPlayer!
     var audioRecorder: AVAudioRecorder!
     
@@ -37,11 +40,20 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             audioRecorder.delegate = self
             audioRecorder.prepareToRecord()
         
+        if (isAutoPlayOn) {
+            onAudioTap("start")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "storyTimeSegueIdentifier") {
+            self.storyboardController = segue.destinationViewController as! StorytimeViewController
+        }
     }
     
     func playAudio(soundName: String) {
@@ -53,6 +65,10 @@ class ContainerViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
             audioPlayer.play()
     }
     
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        print("Finished playing")
+        self.storyboardController.turnPage()
+    }
        
     @IBAction func onDismissTap() {
         self.dismissViewControllerAnimated(true, completion: nil)

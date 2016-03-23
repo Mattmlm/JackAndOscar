@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class InitialViewController: UIViewController {
-
+    
     var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
@@ -24,15 +24,22 @@ class InitialViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinationViewController = segue.destinationViewController as UIViewController!
-        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
-        fadeTransition = FadeTransition()
-        destinationViewController.transitioningDelegate = fadeTransition
-        fadeTransition.duration = 0.5
+        if let destinationViewController = segue.destinationViewController as? ContainerViewController {
+            destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            fadeTransition = FadeTransition()
+            destinationViewController.transitioningDelegate = fadeTransition
+            fadeTransition.duration = 0.5
+            if (sender as! String == "autoplay") {
+                destinationViewController.isAutoPlayOn = true
+            }
+        }
     }
     
     @IBAction func onReadMyselfButton(sender: AnyObject) {
-        performSegueWithIdentifier("goToStorytimeSegue", sender: nil)
+        performSegueWithIdentifier("goToStorytimeSegue", sender: "readMyself")
     }
 
+    @IBAction func onAutoPlayButton(sender: AnyObject) {
+        performSegueWithIdentifier("goToStorytimeSegue", sender: "autoplay")
+    }
 }
